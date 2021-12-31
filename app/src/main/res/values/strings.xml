@@ -25,8 +25,14 @@
     <string name="name">Name*</string>
     <string name="email">Email address*</string>
     <string name="mobile">Mobile number*</string>
+    <string name="phone">Phone number*</string>
     <string name="acceptour">Accept our</string>
     <string name="term">Terme and Conditions</string>
     <string name="already">already registered?</string>
+    <string name="iminfluencer">IM INFLUENCER</string>
+    <string name="imbrand">IM BRAND</string>
+    <string name="typeSignUp"> ALGERIA’S LARGEST INFLUENCER MARKETING   PLATFORM</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
 

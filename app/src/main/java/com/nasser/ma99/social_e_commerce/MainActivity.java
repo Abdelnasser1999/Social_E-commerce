@@ -23,14 +23,8 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
-        signup = (TextView)findViewById(R.id.tv_signup);
 
-        signup.setOnClickListener(view -> {
 
-            Intent i = new Intent(MainActivity.this,LoginActivity.class);
-            startActivity(i);
-
-        });
 
 
 

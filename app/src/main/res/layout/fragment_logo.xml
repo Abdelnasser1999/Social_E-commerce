@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LogoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/firstWelcomeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:fontFamily="@font/salsa"
+            android:gravity="center"
+            android:text="@string/Logo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36ssp" />
+
+        <ImageView
+            android:id="@+id/firstrectangle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/firstWelcomeImage"
+            android:layout_marginTop="-40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rectangle4" />
+
+        <TextView
+            android:id="@+id/firsttext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/salsa"
+            android:gravity="center"
+            android:text="@string/slide_4_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_36ssp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firsttext"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/salsa"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:text="@string/slide_4_desc"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/ellipsel"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/tv_signin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/ellipser"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/signin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

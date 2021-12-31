@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.MoodboardFragment">
-
+    tools:context=".Fragment.MoodDescriptionFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,22 +48,22 @@
 
         <TextView
             android:id="@+id/textView3212"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:fontFamily="@font/salsa"
+            android:gravity="center"
             android:text="@string/Moodboard"
             android:textColor="@color/black"
-            android:textSize="@dimen/_16ssp" />
+            android:textSize="@dimen/_28ssp" />
 
         <ImageButton
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
             android:id="@+id/add_header_image"
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_60sdp"
-            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_40sdp"
             android:background="@null"
             android:src="@drawable/ic_baseline_add_circle_outline_24"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -77,60 +76,24 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_50sdp"
             android:fontFamily="@font/salsa"
-            android:text="@string/publish"
+            android:text="@string/Attachement"
             android:textColor="@color/black"
-            android:textSize="@dimen/_22ssp" />
+            android:textSize="@dimen/_18ssp" />
 
-        <TextView
-
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Do"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_14ssp" />
 
         <EditText
             android:id="@+id/editTextTextPersonName432"
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:ems="10"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:fontFamily="@font/salsa"
-            android:hint="@string/EenterDO"
-            android:inputType="textPersonName"
-            android:textSize="@dimen/_13ssp"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView3"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Dont"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_14ssp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
             android:ems="10"
             android:fontFamily="@font/salsa"
-            android:hint="@string/EnterDont"
+            android:hint="@string/EnterAttachement"
             android:inputType="textPersonName"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:textSize="@dimen/_13ssp"
+            android:textSize="@dimen/_18ssp"
             tools:ignore="TouchTargetSizeCheck" />
-
 
         <TextView
 
@@ -139,7 +102,7 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_below="@id/text2"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_110sdp"
             android:background="@drawable/ellipsesave"
             android:gravity="center"
             android:text="@string/save"

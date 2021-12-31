@@ -9,26 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nasser.ma99.social_e_commerce.R;
+import com.nasser.ma99.social_e_commerce.databinding.FragmentMoodDescriptionBinding;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentMoodboardBinding;
 
 
-public class MoodboardFragment extends Fragment {
-    FragmentMoodboardBinding binding;
+public class MoodDescriptionFragment extends Fragment {
+    FragmentMoodDescriptionBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentMoodboardBinding.inflate(inflater, container, false);
+        binding = FragmentMoodDescriptionBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
 
 
-binding.btNextMoodboardDec.setOnClickListener(view1 -> {
-
-
-    getActivity().getSupportFragmentManager().beginTransaction()
-            .replace(R.id.fragmentContainerView,new MoodDescriptionFragment()).commit();
-
-});
 
 
 

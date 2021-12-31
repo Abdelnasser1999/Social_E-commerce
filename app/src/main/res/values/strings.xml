@@ -72,6 +72,9 @@
     <string name="Dont">Dont</string>
     <string name="EnterDont">Enter Don’t  </string>
 
+    <string name="Attachement">Attachement Description*</string>
+    <string name="EnterAttachement">Enter Attachement Description</string>
+
     <string name="uploadaimage">upload a header image for your compaign </string>
     <string name="creatcopaign">Creat the Copaign  </string>
     <string name="iminfluencer">IM INFLUENCER</string>

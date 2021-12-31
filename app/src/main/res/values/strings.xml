@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">Social_E-commerce</string>
+    <string name="app_name">NewApp</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">skip</string>
+    <string name="start">GOT IT</string>
+    <string name="Logo">Logo</string>
+
+    <string name="slide_1_title">why should you sign up ?</string>
+    <string name="slide_1_desc">we can help you look for brands best suited for you so you can spend less time looking and focus on creating amazing content .</string>
+
+    <string name="slide_2_title">Unlock all benefits!</string>
+    <string name="slide_2_desc">ONCE YOU SET UP YOUR PROFILE. CONNECT ALL SOCIAL ACCOUNTS AND GET ACESS TO ALL OUR BEST LEARNING RESSOURCES</string>
+
+    <string name="slide_3_title">its your chance to be a part of something</string>
+    <string name="slide_3_subtitle">HUGE!</string>
+    <string name="slide_3_desc">join over 30.000 influencers who reportedly had 3.5X growth in reach</string>
+
+    <string name="slide_4_title">so what are you waiting for</string>
+    <string name="slide_4_desc">dont miss out , you’re just a tap away from sucess.</string>
+    <string name="signup">sign up</string>
+    <string name="signup_subtitle">fill the details and creat your account</string>
+    <string name="signin">sign in</string>
+    <string name="name">Name*</string>
+    <string name="email">Email address*</string>
+    <string name="mobile">Mobile number*</string>
+    <string name="acceptour">Accept our</string>
+    <string name="term">Terme and Conditions</string>
+    <string name="already">already registered?</string>
 </resources>
+

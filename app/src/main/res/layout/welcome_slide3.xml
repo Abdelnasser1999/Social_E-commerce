@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/firstWelcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo3" />
+
+    <ImageView
+        android:id="@+id/firstrectangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firstWelcomeImage"
+        android:layout_marginTop="-350dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle3" />
+
+    <TextView
+
+        android:id="@+id/firsttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstWelcomeImage"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/salsa"
+        android:gravity="center"
+        android:lineHeight="@dimen/_40sdp"
+        android:text="@string/slide_3_title"
+        android:textColor="#613CAF"
+        android:textSize="@dimen/_26ssp" />
+
+    <TextView
+
+        android:id="@+id/firsttext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firsttext"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/salsa"
+        android:gravity="center"
+        android:text="@string/slide_3_subtitle"
+        android:textColor="#613CAF"
+        android:textSize="@dimen/_36ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/firsttext2"
+
+
+        android:fontFamily="@font/salsa"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingRight="@dimen/_40sdp"
+        android:text="@string/slide_3_desc"
+        android:textColor="#613CAF"
+        android:textSize="@dimen/_18ssp" />
+
+</RelativeLayout>

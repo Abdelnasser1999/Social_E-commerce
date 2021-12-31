@@ -11,23 +11,23 @@
 
     <!--Button to go on next step-->
     <com.kofigyan.stateprogressbar.StateProgressBar
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginStart="@dimen/_10sdp"
         android:id="@+id/your_state_progress_bar_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:spb_animateToCurrentProgressState="true"
         app:spb_checkStateCompleted="true"
         app:spb_currentStateDescriptionColor="#4AE76C"
-        app:spb_currentStateNumber="two"
+        app:spb_currentStateNumber="one"
         app:spb_maxStateNumber="two"
 
         app:spb_stateBackgroundColor="#BDBDBD"
         app:spb_stateDescriptionColor="#808080"
-        app:spb_stateSize="@dimen/_30sdp"
         app:spb_stateForegroundColor="#4AE76C"
         app:spb_stateNumberBackgroundColor="#808080"
-        app:spb_stateNumberForegroundColor="#eeeeee" />
+        app:spb_stateNumberForegroundColor="#eeeeee"
+        app:spb_stateSize="@dimen/_30sdp" />
 
     <ImageButton
         android:id="@+id/bt_back"

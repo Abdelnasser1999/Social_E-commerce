@@ -53,17 +53,17 @@
         android:textSize="@dimen/_18ssp" />
 
     <TextView
-        android:layout_marginStart="@dimen/_25sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text2"
+        android:layout_marginStart="@dimen/_25sdp"
         android:layout_marginTop="@dimen/_25sdp"
         android:background="@drawable/ellipsel"
         android:gravity="center"
-        android:textStyle="bold"
         android:text="@string/signup"
         android:textColor="@color/white"
-        android:textSize="@dimen/_16ssp" />
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_alignParentEnd="true"

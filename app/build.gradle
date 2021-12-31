@@ -33,7 +33,6 @@ android {
 }
 
 dependencies {
-
     implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
     implementation 'androidx.viewpager:viewpager:1.0.0'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'

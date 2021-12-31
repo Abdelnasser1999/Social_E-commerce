@@ -74,6 +74,25 @@
 
     <string name="Attachement">Attachement Description*</string>
     <string name="EnterAttachement">Enter Attachement Description</string>
+    <string name="contentcreators">content creators</string>
+
+    <string name="Age">Age*</string>
+
+    <string name="Price">Price*</string>
+
+    <string name="InfluencerType">Influencer Type*</string>
+
+    <string name="Generic">Generic</string>
+    <string name="Elite">Elite</string>
+
+    <string name="Gender">Gender</string>
+
+    <string name="Male">Male </string>
+    <string name="Female">Female</string>
+
+    <string name="TargetContry">Target Contry* </string>
+
+    <string name="Enteryourbudget">Enter your budget</string>
 
     <string name="uploadaimage">upload a header image for your compaign </string>
     <string name="creatcopaign">Creat the Copaign  </string>
@@ -93,6 +112,13 @@
         <item>type5</item>
     </string-array>
 
+    <string-array name="price">
+        <item><b>DZD</b></item>
+        <item><b>ERU</b></item>
+        <item><b>USD</b></item>
+
+
+    </string-array>
     <string-array name="type">
         <item>#</item>
         <item>*</item>

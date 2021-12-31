@@ -22,9 +22,11 @@ public class MoodDescriptionFragment extends Fragment {
         View view = binding.getRoot();
 
 
+        binding.btNextContent.setOnClickListener(view1 -> {
+    getActivity().getSupportFragmentManager().beginTransaction()
+            .replace(R.id.fragmentContainerView,new ContentFragment()).commit();
 
-
-
+        });
 
         return view;
     }

@@ -1,4 +1,4 @@
-package com.nasser.ma99.social_e_commerce;
+package com.nasser.ma99.social_e_commerce.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.nasser.ma99.social_e_commerce.Adapter.PrefManager;
+import com.nasser.ma99.social_e_commerce.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         PrefManager prefManager = new PrefManager(getApplicationContext());
         if(prefManager.isFirstTimeLaunch()){
             prefManager.setFirstTimeLaunch(false);
-            startActivity(new Intent(MainActivity.this,WelcomeActivity.class));
+            startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
             finish();
         }
 

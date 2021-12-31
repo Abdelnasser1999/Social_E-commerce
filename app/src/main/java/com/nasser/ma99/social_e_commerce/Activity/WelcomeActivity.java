@@ -1,4 +1,4 @@
-package com.nasser.ma99.social_e_commerce;
+package com.nasser.ma99.social_e_commerce.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.nasser.ma99.social_e_commerce.Adapter.PrefManager;
+import com.nasser.ma99.social_e_commerce.R;
 
 
 public class WelcomeActivity extends AppCompatActivity {

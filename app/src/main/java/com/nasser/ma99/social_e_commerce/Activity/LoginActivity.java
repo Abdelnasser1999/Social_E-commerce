@@ -1,27 +1,38 @@
-package com.nasser.ma99.social_e_commerce;
+package com.nasser.ma99.social_e_commerce.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.kofigyan.stateprogressbar.StateProgressBar;
+import com.nasser.ma99.social_e_commerce.R;
+import com.nasser.ma99.social_e_commerce.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
-    String[] descriptionData = {"Step 1", "Step 2"};
+    ActivityLoginBinding binding;
 
+    String[] descriptionData = {"Step 1", "Step 2"};
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
 
-        StateProgressBar stateProgressBar =  findViewById(R.id.your_state_progress_bar_id);
+        StateProgressBar stateProgressBar = findViewById(R.id.your_state_progress_bar_id);
         stateProgressBar.setStateDescriptionData(descriptionData);
 
 
+        binding.tvSignupAtLogin.setOnClickListener(view -> {
+            Intent i = new Intent(LoginActivity.this,AddCompaignActivity.class);
+            startActivity(i);
 
+
+        });
 
 
 
@@ -52,4 +63,4 @@ public class LoginActivity extends AppCompatActivity {
             }
         });*/
     }
-    }
+}

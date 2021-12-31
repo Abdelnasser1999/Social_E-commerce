@@ -1,6 +1,5 @@
 package com.nasser.ma99.social_e_commerce.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nasser.ma99.social_e_commerce.LoginActivity;
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentLogoBinding;
 

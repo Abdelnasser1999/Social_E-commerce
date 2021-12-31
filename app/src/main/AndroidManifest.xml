@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Social_Ecommerce">
-        <activity android:name=".LoginActivity"></activity>
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".Activity.AddCompaignActivity"
+            android:exported="false" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity
+            android:name=".Activity.WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +23,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.MainActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

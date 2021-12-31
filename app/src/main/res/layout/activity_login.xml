@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <!--Progress Bar created-->
 
@@ -15,6 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
+        app:spb_stateLineThickness="2.8dp"
         android:layout_marginTop="@dimen/_30sdp"
         app:spb_animateToCurrentProgressState="true"
         app:spb_checkStateCompleted="true"

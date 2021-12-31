@@ -29,6 +29,24 @@
     <string name="acceptour">Accept our</string>
     <string name="term">Terme and Conditions</string>
     <string name="already">already registered?</string>
+    <string name="newCompaign">new compaign </string>
+
+    <string name="BrandName">Brand name*</string>
+    <string name="enterbrandname">Enter Brand Name</string>
+
+    <string name="Branddec">Brand Description*</string>
+    <string name="Branddecripe">Describe your Brand</string>
+
+    <string name="catagory">Categorie*</string>
+    <string name="choosecatagory">Choose Category</string>
+
+    <string name="url">Url to Brand (LInk)*</string>
+    <string name="brandLink">Enter your brand Link </string>
+
+    <string name="save">save</string>
+
+    <string name="uploadaimage">upload a header image for your compaign </string>
+    <string name="creatcopaign">Creat the Copaign  </string>
     <string name="iminfluencer">IM INFLUENCER</string>
     <string name="imbrand">IM BRAND</string>
     <string name="typeSignUp"> ALGERIA’S LARGEST INFLUENCER MARKETING   PLATFORM</string>

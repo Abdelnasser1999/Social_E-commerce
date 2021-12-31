@@ -32,8 +32,8 @@
     </array>
 
     <array name="array_dot_inactive">
-        <item>@color/gray</item>
-        <item>@color/gray</item>
-        <item>@color/gray</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
     </array>
 </resources>

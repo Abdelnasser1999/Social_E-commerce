@@ -44,6 +44,33 @@
     <string name="brandLink">Enter your brand Link </string>
 
     <string name="save">save</string>
+    <string name="Platforms">Platforms*</string>
+    <string name="setthebreif">Set The Breif </string>
+
+    <string name="Prelaoded">Prelaoded Content* </string>
+
+    <string name="Compaignname">Compaign name*  </string>
+    <string name="enterCompaignname">Enter Comapign  Name </string>
+
+    <string name="compaigntype">compaign type*</string>
+    <string name="ReadyMakeContent">Ready Make Content  </string>
+
+    <string name="CompaignDescription">Compaign Description*</string>
+    <string name="EnterCompaignDescription">Enter Compaign Description</string>
+
+    <string name="CallofAction">Call of Action*</string>
+    <string name="EnterCallToAction">Enter Call To Action </string>
+
+    <string name="Content">(Content creation. or Ready-Made content) </string>
+    <string name="Moodboard">Moodboard*</string>
+
+    <string name="publish">publish Guidlines </string>
+
+    <string name="Do">Do</string>
+    <string name="EenterDO">Enter Do</string>
+
+    <string name="Dont">Dont</string>
+    <string name="EnterDont">Enter Don’t  </string>
 
     <string name="uploadaimage">upload a header image for your compaign </string>
     <string name="creatcopaign">Creat the Copaign  </string>
@@ -52,5 +79,21 @@
     <string name="typeSignUp"> ALGERIA’S LARGEST INFLUENCER MARKETING   PLATFORM</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="Gender_Names">
+        <item></item>
+        <item>type1</item>
+        <item>type2</item>
+        <item>type3</item>
+        <item>type4</item>
+        <item>type5</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>#</item>
+        <item>*</item>
+    </string-array>
+
 </resources>
 

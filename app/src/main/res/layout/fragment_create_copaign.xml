@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.CreateCopaignFragment">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -82,9 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_12sdp"
-            android:layout_marginEnd="@dimen/_12sdp"
             android:layout_marginTop="@dimen/_6sdp"
-            >
+            android:layout_marginEnd="@dimen/_12sdp">
 
 
             <androidx.cardview.widget.CardView
@@ -114,124 +119,120 @@
             android:id="@+id/textView723"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_14sdp"
             android:fontFamily="@font/salsa"
             android:text="@string/uploadaimage"
             android:textColor="#7E7593"
             android:textSize="@dimen/_10ssp" />
 
         <LinearLayout
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_marginStart="@dimen/_12sdp"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:layout_weight="1"
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/rokkitt"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
                     android:text="@string/BrandName"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:layout_weight="1"
                     android:id="@+id/editTextTextPersonName2"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/salsa"
+                    android:hint="@string/enterbrandname"
 
                     android:inputType="textPersonName"
-                    android:hint="@string/enterbrandname" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <TextView
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:layout_weight="1"
                     android:id="@+id/textView32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/rokkitt"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
                     android:text="@string/Branddec"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:layout_weight="1"
                     android:id="@+id/editTextTextPersonName32"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/salsa"
+                    android:hint="@string/Branddecripe"
 
                     android:inputType="textPersonName"
-                    android:hint="@string/Branddecripe" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <TextView
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:layout_weight="1"
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/rokkitt"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
                     android:text="@string/catagory"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:layout_weight="1"
                     android:id="@+id/editTextTextPerso4nName"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/salsa"
+                    android:hint="@string/choosecatagory"
 
                     android:inputType="textPersonName"
-                    android:hint="@string/choosecatagory" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <TextView
-                    android:layout_marginTop="@dimen/_12sdp"
-
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:layout_weight="1"
                     android:id="@+id/textView431"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/rokkitt"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/salsa"
                     android:text="@string/url"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:layout_weight="1"
                     android:id="@+id/editTextTextPersonName"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:textSize="@dimen/_14ssp"
                     android:fontFamily="@font/salsa"
+                    android:hint="@string/brandLink"
 
                     android:inputType="textPersonName"
-                    android:hint="@string/brandLink" />
+                    android:textSize="@dimen/_13ssp" />
 
             </LinearLayout>
 
@@ -240,9 +241,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_12sdp"
-                android:layout_marginEnd="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_6sdp"
-                >
+                android:layout_marginEnd="@dimen/_12sdp">
 
 
                 <androidx.cardview.widget.CardView
@@ -254,7 +254,7 @@
                         android:id="@+id/imageCopaignBrand"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
-                        android:src="@color/gray"/>
+                        android:src="@color/gray" />
 
                     <ImageButton
                         android:id="@+id/add_Brand_image"
@@ -270,12 +270,12 @@
         </LinearLayout>
 
         <TextView
-            android:layout_marginTop="@dimen/_12sdp"
-            android:id="@+id/tv_signup_at_login"
+            android:id="@+id/tv_save_at_newCompaign"
             android:layout_width="@dimen/_110sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_below="@id/text2"
             android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/ellipsesave"
             android:gravity="center"
             android:text="@string/save"
@@ -284,13 +284,13 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:layout_marginBottom="@dimen/_12sdp"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:layout_gravity="end"
-            android:id="@+id/bt_next"
+            android:id="@+id/bt_next_set_breif"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
             android:background="@color/white"
             android:src="@drawable/ic_baseline_arrow_forward_24"
             tools:ignore="SpeakableTextPresentCheck" />

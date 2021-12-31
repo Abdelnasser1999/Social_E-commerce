@@ -14,17 +14,19 @@ import com.nasser.ma99.social_e_commerce.databinding.FragmentCreateCopaignBindin
 
 public class CreateCopaignFragment extends Fragment {
 
-   FragmentCreateCopaignBinding binding;
+    FragmentCreateCopaignBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-     binding = FragmentCreateCopaignBinding.inflate(inflater, container, false);
-     View view = binding.getRoot();
+        binding = FragmentCreateCopaignBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
+        binding.btNextSetBreif.setOnClickListener(view1 -> {
+            getActivity().getSupportFragmentManager().beginTransaction()
+            .replace(R.id.fragmentContainerView, new SetBreifFragment()).commit();
 
-
-
+        });
 
 
         return view;

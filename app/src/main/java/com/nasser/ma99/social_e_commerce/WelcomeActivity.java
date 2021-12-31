@@ -45,9 +45,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_welcome);
 
-        viewPager = (ViewPager) findViewById(R.id.view_pager);
-        dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
-        btnSkip = (TextView) findViewById(R.id.btn_skip);
+        viewPager =  findViewById(R.id.view_pager);
+        dotsLayout =  findViewById(R.id.layoutDots);
+        btnSkip =  findViewById(R.id.btn_skip);
 
 
         // layouts of welcome sliders
@@ -86,7 +86,7 @@ public class WelcomeActivity extends AppCompatActivity {
         for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#9679;"));
-            dots[i].setTextSize(18);
+            dots[i].setTextSize(12);
             dots[i].setTextColor(colorsInactive[currentPage]);
             dotsLayout.addView(dots[i]);
         }

@@ -6,7 +6,7 @@
     <ImageView
         android:id="@+id/firstWelcomeImage"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_280sdp"
+        android:layout_height="@dimen/_307sdp"
         android:scaleType="fitXY"
         android:src="@drawable/photo2" />
 

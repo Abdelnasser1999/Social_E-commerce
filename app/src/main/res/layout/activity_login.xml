@@ -19,7 +19,7 @@
         app:spb_animateToCurrentProgressState="true"
         app:spb_checkStateCompleted="true"
         app:spb_currentStateDescriptionColor="#4AE76C"
-        app:spb_currentStateNumber="one"
+        app:spb_currentStateNumber="two"
         app:spb_maxStateNumber="two"
 
         app:spb_stateBackgroundColor="#BDBDBD"

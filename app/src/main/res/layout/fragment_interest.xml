@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.InterestFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_back_createcom"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.kofigyan.stateprogressbar.StateProgressBar
+                android:id="@+id/your_state_progress_bar_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                app:spb_animateToCurrentProgressState="true"
+                app:spb_checkStateCompleted="true"
+                app:spb_currentStateDescriptionColor="#F06BF2"
+                app:spb_currentStateNumber="three"
+                app:spb_maxStateNumber="five"
+                app:spb_stateBackgroundColor="#7E7593"
+
+                app:spb_stateDescriptionColor="#7E7593"
+                app:spb_stateForegroundColor="#F06BF2"
+                app:spb_stateLineThickness="2.8dp"
+                app:spb_stateNumberBackgroundColor="#F06BF2"
+                app:spb_stateNumberForegroundColor="#7E7593"
+                app:spb_stateSize="@dimen/_30sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textVi13ew35112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/salsa"
+            android:text="@string/Tregetregion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName432"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:ems="10"
+            android:fontFamily="@font/salsa"
+            android:hint="@string/EnteryourtargetRegion"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textVi13ew351212"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/salsa"
+            android:text="@string/InterestIn"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/tv_Beautyfashion"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Beautyfashion"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Howtostyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="16dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Howtostyle"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Fitnessyoga"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="236dp"
+                android:layout_marginTop="16dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Fitnessyoga"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_TechnologieSience"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="64dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/TechnologieSience"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_RestaurantFoodGrocery"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="64dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/RestaurantFoodGrocery"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_HomeGarden"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="116dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/HomeGarden"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Cooking"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="116dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Cooking"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_HealthyLifestyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="216dp"
+                android:layout_marginTop="116dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/HealthyLifestyle"
+                android:textColor="#CF85BA"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_BooksLiterature"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="172dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/BooksLiterature"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Moviestv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="152dp"
+                android:layout_marginTop="172dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Moviestv"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_LuxuryGoods"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="172dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/LuxuryGoods"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginTop="228dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Entertainment"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_ChildrenFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="228dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/ChildrenFamily"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Photography"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginStart="256dp"
+                android:layout_marginTop="228dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/Photography"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_TravelTourism"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginTop="284dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/TravelTourism"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Sports"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="284dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/Sports"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="284dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/Music"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ArtDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginTop="340dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/ArtDesign"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_BusinessCareers"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="340dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/BusinessCareers"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_CarsMotorbikes"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginTop="396dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/CarsMotorbikes"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_Addanother"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="396dp"
+                android:background="#F8EEF6"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/Addanother"
+                android:textColor="@color/second"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_save_at_newCompaign"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@id/text2"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/ellipsesave"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/bt_next_set_breif"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</FrameLayout>

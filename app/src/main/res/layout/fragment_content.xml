@@ -72,6 +72,7 @@
 
         <com.google.android.material.slider.RangeSlider
             android:id="@+id/RangeSlider"
+            android:layout_marginTop="-25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/Theme.Mytheme"
@@ -263,7 +264,7 @@
 
         <ImageButton
 
-            android:id="@+id/bt_next_moodboard_dec"
+            android:id="@+id/bt_next_interest"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="bottom|end"

@@ -92,6 +92,53 @@
 
     <string name="TargetContry">Target Contry* </string>
 
+    <string name="Tregetregion">Treget region* </string>
+    <string name="EnteryourtargetRegion">Enter your target Region</string>
+
+    <string name="InterestIn">Interest In</string>
+
+    <string name="Beautyfashion">Beauty &amp; fashion </string>
+
+    <string name="Howtostyle">How to-style  </string>
+
+    <string name="Fitnessyoga">Fitness &amp; yoga </string>
+
+    <string name="TechnologieSience">Technologie &amp; Sience  </string>
+
+    <string name="RestaurantFoodGrocery">Restaurant,Food &amp;  Grocery</string>
+
+    <string name="HomeGarden">Home &amp; Garden </string>
+
+    <string name="Cooking">Cooking </string>
+
+    <string name="HealthyLifestyle">Healthy Lifestyle </string>
+
+    <string name="BooksLiterature">Books &amp; Literature  </string>
+
+    <string name="Moviestv">Movies &amp; tv  </string>
+
+    <string name="LuxuryGoods">Luxury Goods</string>
+
+    <string name="Entertainment">Entertainment</string>
+
+    <string name="ChildrenFamily">Children &amp; Family </string>
+
+    <string name="Photography">Photography</string>
+
+    <string name="TravelTourism">Travel &amp; Tourism </string>
+
+    <string name="Sports">Sports</string>
+
+    <string name="Music">Music</string>
+
+    <string name="ArtDesign">Art &amp; Design </string>
+
+    <string name="BusinessCareers">Business &amp; Careers</string>
+
+    <string name="CarsMotorbikes">Cars &amp; Motorbikes </string>
+
+    <string name="Addanother">+Add another </string>
+
     <string name="Enteryourbudget">Enter your budget</string>
 
     <string name="uploadaimage">upload a header image for your compaign </string>

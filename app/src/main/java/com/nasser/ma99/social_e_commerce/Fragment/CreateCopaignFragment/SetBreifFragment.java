@@ -1,22 +1,16 @@
-package com.nasser.ma99.social_e_commerce.Fragment;
+package com.nasser.ma99.social_e_commerce.Fragment.CreateCopaignFragment;
 
-import android.graphics.PorterDuff;
 import android.os.Bundle;
 
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.AutoCompleteTextView;
-import android.widget.ImageView;
 
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentSetBreifBinding;
-
-import java.util.ArrayList;
 
 
 public class SetBreifFragment extends Fragment {

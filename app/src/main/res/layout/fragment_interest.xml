@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.InterestFragment">
+    tools:context=".Fragment.CreateCopaignFragment.InterestFragment">
 
 
     <LinearLayout
@@ -451,7 +451,7 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/bt_next_set_breif"
+            android:id="@+id/bt_next_review"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="end"

@@ -25,6 +25,7 @@ public class TypeSignUpFragment extends Fragment {
 
         binding.tvImInfluencer.setOnClickListener(view1 -> {
             Intent i = new Intent(getActivity(), LoginActivity.class);
+            i.putExtra("type","Influencer");
             getActivity().startActivity(i);
 
         });
@@ -32,6 +33,7 @@ public class TypeSignUpFragment extends Fragment {
 
         binding.tvImBrand.setOnClickListener(view1 -> {
             Intent i = new Intent(getActivity(), LoginActivity.class);
+            i.putExtra("type","Brand");
             getActivity().startActivity(i);
 
         });

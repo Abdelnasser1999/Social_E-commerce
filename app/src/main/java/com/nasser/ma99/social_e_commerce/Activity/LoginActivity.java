@@ -28,8 +28,22 @@ public class LoginActivity extends AppCompatActivity {
 
 
         binding.tvSignupAtLogin.setOnClickListener(view -> {
-            Intent i = new Intent(LoginActivity.this,AddCompaignActivity.class);
-            startActivity(i);
+            String type = getIntent().getStringExtra("type");
+
+            if(type.equals("Influencer"))
+            {
+                Intent i = new Intent(LoginActivity.this,InfluencerCreateActivity.class);
+                startActivity(i);
+
+            }
+
+            else
+                {
+                    Intent i = new Intent(LoginActivity.this,AddCompaignActivity.class);
+                    startActivity(i);
+                }
+
+
 
 
         });

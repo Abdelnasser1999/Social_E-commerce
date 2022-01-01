@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.CreateCopaignFragment.MoodboardFragment">
-
+    tools:context=".Fragment.CreateCopaignFragment.ReviewFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +34,7 @@
                 app:spb_animateToCurrentProgressState="true"
                 app:spb_checkStateCompleted="true"
                 app:spb_currentStateDescriptionColor="#F06BF2"
-                app:spb_currentStateNumber="two"
+                app:spb_currentStateNumber="four"
                 app:spb_maxStateNumber="five"
                 app:spb_stateBackgroundColor="#7E7593"
 
@@ -49,87 +48,73 @@
 
         <TextView
             android:id="@+id/textView3212"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Moodboard"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_16ssp" />
-
-        <ImageButton
+            android:layout_marginStart="@dimen/_14sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:id="@+id/add_header_image"
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:background="@null"
-            android:src="@drawable/ic_baseline_add_circle_outline_24"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:fontFamily="@font/salsa"
+            android:gravity="center"
+            android:text="@string/ReviewAndConfirm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp" />
 
         <TextView
-            android:id="@+id/textView3532212"
-
+            android:id="@+id/textView353221342"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_35sdp"
             android:fontFamily="@font/salsa"
-            android:text="@string/publish"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_22ssp" />
-
-        <TextView
-
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Do"
+            android:text="@string/Whatcreator"
             android:textColor="@color/black"
             android:textSize="@dimen/_14ssp" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName432"
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:ems="10"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:fontFamily="@font/salsa"
-            android:hint="@string/EenterDO"
-            android:inputType="textPersonName"
-            android:textSize="@dimen/_13ssp"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView3"
-
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Dont"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_14ssp" />
+            android:layout_height="@dimen/_115sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:cardBackgroundColor="#F6E7F2"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardUseCompatPadding="true">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:ems="10"
-            android:fontFamily="@font/salsa"
-            android:hint="@string/EnterDont"
-            android:inputType="textPersonName"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:textSize="@dimen/_13ssp"
-            tools:ignore="TouchTargetSizeCheck" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                app:cardBackgroundColor="#E2B5D6"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:cardBackgroundColor="#EFD6E8"
+            app:cardCornerRadius="@dimen/_25sdp"
+            app:cardUseCompatPadding="true">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardBackgroundColor="#C4C4C4"
+                app:cardCornerRadius="@dimen/_11sdp"
+                app:cardUseCompatPadding="true" />
+
+
+        </androidx.cardview.widget.CardView>
 
 
         <TextView
@@ -139,7 +124,7 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_below="@id/text2"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
             android:background="@drawable/ellipsesave"
             android:gravity="center"
             android:text="@string/save"
@@ -149,16 +134,15 @@
 
         <ImageButton
 
-            android:id="@+id/bt_next_moodboard_dec"
+            android:id="@+id/bt_next_interest"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="bottom|end"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_12sdp"
             android:background="@color/white"
             android:src="@drawable/ic_baseline_arrow_forward_24"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
-
 </FrameLayout>

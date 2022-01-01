@@ -1,10 +1,9 @@
-package com.nasser.ma99.social_e_commerce.Fragment;
+package com.nasser.ma99.social_e_commerce.Fragment.CreateCopaignFragment;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
-import androidx.annotation.ColorInt;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -32,6 +31,12 @@ public class InterestFragment extends Fragment {
 
         });
 
+        binding.btNextReview.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView,new ReviewFragment()).commit();
+
+        });
 
         return view;
     }

@@ -1,4 +1,4 @@
-package com.nasser.ma99.social_e_commerce.Fragment;
+package com.nasser.ma99.social_e_commerce.Fragment.CreateCopaignFragment;
 
 import android.os.Bundle;
 
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentMoodDescriptionBinding;
-import com.nasser.ma99.social_e_commerce.databinding.FragmentMoodboardBinding;
 
 
 public class MoodDescriptionFragment extends Fragment {
@@ -23,8 +22,8 @@ public class MoodDescriptionFragment extends Fragment {
 
 
         binding.btNextContent.setOnClickListener(view1 -> {
-    getActivity().getSupportFragmentManager().beginTransaction()
-            .replace(R.id.fragmentContainerView,new ContentFragment()).commit();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView, new ContentFragment()).commit();
 
         });
 

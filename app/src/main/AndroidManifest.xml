@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Social_Ecommerce">
         <activity
+            android:name=".Activity.InfluencerCreateActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.AddCompaignActivity"
             android:exported="false" />
         <activity android:name=".Activity.LoginActivity" />

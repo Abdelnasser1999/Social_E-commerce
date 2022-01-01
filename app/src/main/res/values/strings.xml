@@ -148,6 +148,25 @@
 
     <string name="influencername">influencer name* </string>
 
+    <string name="CompaignDetails">Compaign Details </string>
+
+    <string name="compaignName">compaign Name </string>
+
+    <string name="Moadborad">Moadborad </string>
+
+    <string name="PrelaodedContent">Prelaoded Content  </string>
+
+    <string name="CalltoAction">Call to Action </string>
+
+    <string name="WhatCreatorsDonSee">What Creators Don’t See:</string>
+
+    <string name="Age2">Age:</string>
+    <string name="InfluencerType2">Influencer Type : </string>
+    <string name="Gender2">Gender :</string>
+    <string name="TargetRegions">Target Regions:</string>
+    <string name="interestIn">interest In:</string>
+    <string name="Budget">Budget:</string>
+
     <string name="Enteryourbudget">Enter your budget</string>
 
     <string name="uploadaimage">upload a header image for your compaign </string>

@@ -20,6 +20,12 @@ public class ReviewFragment extends Fragment {
         binding = FragmentReviewBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
+        binding.btNextPrelaoded.setOnClickListener(view1 -> {
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView,new PrelaodedFragment()).commit();
+
+
+        });
 
 
 

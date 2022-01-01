@@ -96,22 +96,66 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_180sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             app:cardBackgroundColor="#EFD6E8"
-            app:cardCornerRadius="@dimen/_25sdp"
+            app:cardCornerRadius="@dimen/_35sdp"
             app:cardUseCompatPadding="true">
 
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/_160sdp"
-                android:layout_height="@dimen/_65sdp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/_20sdp"
-                app:cardBackgroundColor="#C4C4C4"
-                app:cardCornerRadius="@dimen/_11sdp"
-                app:cardUseCompatPadding="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:id="@+id/textView3532213242"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/CompaignDetails"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_190sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:cardBackgroundColor="#C4C4C4"
+                    app:cardCornerRadius="@dimen/_11sdp"
+                    app:cardUseCompatPadding="true" />
+
+                <TextView
+                    android:id="@+id/textView35242"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/compaignName"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/textView135242"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/Moadborad"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    app:cardBackgroundColor="#C4C4C4"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardUseCompatPadding="true" />
+            </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
@@ -134,12 +178,12 @@
 
         <ImageButton
 
-            android:id="@+id/bt_next_interest"
+            android:id="@+id/bt_next_Prelaoded"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="bottom|end"
-            android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
             android:background="@color/white"
             android:src="@drawable/ic_baseline_arrow_forward_24"
             tools:ignore="SpeakableTextPresentCheck" />

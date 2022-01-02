@@ -215,7 +215,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-
+            android:fontFamily="@font/salsa"
             android:id="@+id/tv_save_at_moodboard"
             android:layout_width="@dimen/_110sdp"
             android:layout_height="@dimen/_50sdp"
@@ -227,11 +227,11 @@
             android:text="@string/save"
             android:textColor="@color/black"
             android:textSize="@dimen/_18ssp"
-            android:textStyle="bold" />
+             />
 
         <ImageButton
 
-            android:id="@+id/bt_next_interest"
+            android:id="@+id/bt_next_Payment"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="bottom|end"

@@ -167,6 +167,41 @@
     <string name="interestIn">interest In:</string>
     <string name="Budget">Budget:</string>
 
+    <string name="PaymentSubmit">Payment &amp; Submit</string>
+
+    <string name="PaymentType">Payment Type*</string>
+    <string name="Onbideapproval">On bide approval</string>
+
+
+    <string name="CompaignPublishDate">Compaign Publish Date*</string>
+    <string name="EnterCompaignPublishDate">Enter Compaign Publish Date</string>
+
+    <string name="CompaignEndDate">Compaign End Date*</string>
+    <string name="EnterCompaignEndDate">Enter Compaign End  Date</string>
+
+    <string name="CompaignManagerDetails">Compaign Manager Details </string>
+
+    <string name="FirstName">First Name*</string>
+    <string name="LastName">Last Name*</string>
+    <string name="Email">Email*</string>
+    <string name="Mobilenumber">Mobile number* </string>
+
+    <string name="FinancialDetails">Financial Details </string>
+    <string name="CompanyName">Company Name*</string>
+    <string name="VAT">VAT*</string>
+    <string name="CR">CR*</string>
+    <string name="FinancialEmail">Financial Email</string>
+
+    <string name="FinancialPhone">Financial Phone*</string>
+    <string name="BillingAddress">BillingAddress</string>
+    <string name="StreetAdressPOBox">Street Adress /P.O Box*</string>
+    <string name="City">City*</string>
+
+    <string name="Wilaya">Wilaya*</string>
+    <string name="PostZipcode">Post/Zip code*</string>
+
+    <string name="Submit">Submit</string>
+
     <string name="Enteryourbudget">Enter your budget</string>
 
     <string name="uploadaimage">upload a header image for your compaign </string>

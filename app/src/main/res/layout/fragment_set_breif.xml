@@ -303,6 +303,8 @@
         </RelativeLayout>
 
         <TextView
+            android:fontFamily="@font/salsa"
+
             android:id="@+id/tv_save_at_settheBreif"
             android:layout_width="@dimen/_110sdp"
             android:layout_height="@dimen/_50sdp"
@@ -314,7 +316,7 @@
             android:text="@string/save"
             android:textColor="@color/black"
             android:textSize="@dimen/_18ssp"
-            android:textStyle="bold" />
+           />
 
         <ImageButton
 

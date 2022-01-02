@@ -96,6 +96,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
+            android:fontFamily="@font/salsa"
 
             android:id="@+id/tv_save_at_moodboard"
             android:layout_width="@dimen/_110sdp"

@@ -27,6 +27,14 @@ public class PaymentFragment extends Fragment {
 
         });
 
+        binding.btBackPrelaoded.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView, new PrelaodedFragment()).commit();
+
+
+        });
+
 
         return view;
     }

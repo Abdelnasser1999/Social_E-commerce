@@ -26,6 +26,15 @@ public class MoodDescriptionFragment extends Fragment {
                     .replace(R.id.fragmentContainerView, new ContentFragment()).commit();
 
         });
+        
+        
+        binding.btBackMoodboard.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction().
+                    replace(R.id.fragmentContainerView,new MoodboardFragment()).commit();
+
+
+        });
 
         return view;
     }

@@ -24,7 +24,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/bt_back"
+                android:id="@+id/bt_back_to_login"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_6sdp"

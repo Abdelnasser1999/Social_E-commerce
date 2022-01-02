@@ -21,15 +21,22 @@ public class MoodboardFragment extends Fragment {
         View view = binding.getRoot();
 
 
+        binding.btNextMoodboardDec.setOnClickListener(view1 -> {
 
-binding.btNextMoodboardDec.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView, new MoodDescriptionFragment()).commit();
+
+        });
 
 
-    getActivity().getSupportFragmentManager().beginTransaction()
-            .replace(R.id.fragmentContainerView,new MoodDescriptionFragment()).commit();
+        binding.btBackSetBreif.setOnClickListener(view1 -> {
 
-});
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView,new SetBreifFragment()).commit();
 
+
+        });
 
 
         return view;

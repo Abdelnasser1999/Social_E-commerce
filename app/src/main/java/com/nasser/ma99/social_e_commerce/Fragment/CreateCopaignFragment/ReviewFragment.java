@@ -27,6 +27,14 @@ public class ReviewFragment extends Fragment {
 
         });
 
+        binding.btBackInterest.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction().
+                    replace(R.id.fragmentContainerView, new InterestFragment()).commit();
+
+
+        });
+
 
 
         return view;

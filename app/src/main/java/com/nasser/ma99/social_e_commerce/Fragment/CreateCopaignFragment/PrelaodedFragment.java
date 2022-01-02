@@ -30,6 +30,13 @@ public class PrelaodedFragment extends Fragment {
 
         });
 
+        binding.btBackReview.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView, new ReviewFragment()).commit();
+
+        });
+
 
         return  view;
     }

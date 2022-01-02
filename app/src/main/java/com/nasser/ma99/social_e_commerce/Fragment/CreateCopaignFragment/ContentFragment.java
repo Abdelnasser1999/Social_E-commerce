@@ -46,6 +46,19 @@ public class ContentFragment extends Fragment {
 
 
         });
+
+        binding.btBackMooddecrip.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView ,new MoodDescriptionFragment()).commit();
+
+
+        });
+
+
+
+
+
         return view;
     }
 }

@@ -38,6 +38,18 @@ public class InterestFragment extends Fragment {
 
         });
 
+        binding.btBackContent.setOnClickListener(view1 -> {
+
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView,new ContentFragment()).commit();
+
+
+        });
+
+
+
+
+
         return view;
     }
 }

@@ -202,6 +202,28 @@
 
     <string name="Submit">Submit</string>
 
+    <string name="Settings">Settings</string>
+
+    <string name="CompaignName">Compaign Name</string>
+
+    <string name="Email2">E-mail</string>
+
+    <string name="Edit">Edit</string>
+
+    <string name="Language">Language</string>
+
+    <string name="wallet">wallet</string>
+
+    <string name="ChangePassword">Change Password </string>
+    <string name="PaymentHistory">Payment History </string>
+    <string name="ABOUTUS">ABOUT US</string>
+
+    <string name="logout">logout</string>
+
+    <string name="Changelanguage">Change language </string>
+
+    <string name="DarkMode">Dark Mode </string>
+
     <string name="Enteryourbudget">Enter your budget</string>
 
     <string name="uploadaimage">upload a header image for your compaign </string>

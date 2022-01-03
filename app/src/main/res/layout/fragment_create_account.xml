@@ -280,7 +280,7 @@
              />
 
         <ImageButton
-            android:id="@+id/bt_next_set_breif"
+            android:id="@+id/bt_next_changelanguage"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="end"

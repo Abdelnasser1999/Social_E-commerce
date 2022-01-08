@@ -1,8 +1,11 @@
 package com.nasser.ma99.social_e_commerce.Activity;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -42,14 +45,8 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN
-        ,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        DisplayMetrics displayMetrics= getResources().getDisplayMetrics();
 
-        dpHeight=displayMetrics.heightPixels;
-        dpWidth=displayMetrics.widthPixels;
-        dDensity=displayMetrics.scaledDensity;
+
 
 
         // Checking for first time launch - before calling setContentView()
@@ -85,8 +82,7 @@ public class WelcomeActivity extends AppCompatActivity {
         myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
-        ViewGroup.LayoutParams viewPagerParams= viewPager.getLayoutParams();
-        viewPagerParams.height=calcHeight(800);
+
 
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +93,8 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
     }
+
+
     public int calcHeight(float value){
         return (int) (dpHeight*(value/designHeight));
     }

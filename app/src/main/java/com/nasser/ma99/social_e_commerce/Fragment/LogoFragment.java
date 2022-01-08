@@ -27,6 +27,7 @@ public class LogoFragment extends Fragment {
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2,new TypeSignUpFragment()).commit();
 
                 }
+
                 );
 
 

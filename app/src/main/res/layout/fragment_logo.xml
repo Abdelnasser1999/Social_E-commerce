@@ -9,34 +9,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <ImageView
             android:id="@+id/firstWelcomeImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_70sdp"
             android:fontFamily="@font/salsa"
             android:gravity="center"
-            android:text="@string/Logo"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_36ssp" />
+            android:src="@drawable/frame_wellcome1" />
 
         <ImageView
             android:id="@+id/firstrectangle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/firstWelcomeImage"
-            android:layout_marginTop="-40dp"
+            android:layout_marginTop="-50dp"
             android:scaleType="fitXY"
-            android:src="@drawable/rectangle4" />
+            android:src="@drawable/rectangle_logo" />
 
         <TextView
-            android:id="@+id/firsttext"
 
+            android:id="@+id/firsttext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-
+            android:layout_below="@id/firstWelcomeImage"
             android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_130sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:fontFamily="@font/salsa"
             android:gravity="center"
@@ -60,32 +58,32 @@
 
         <TextView
             android:id="@+id/tv_signup"
-            android:layout_marginStart="@dimen/_25sdp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text2"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:background="@drawable/ellipsel"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:background="@drawable/rectangle1"
             android:gravity="center"
-            android:textStyle="bold"
             android:text="@string/signup"
             android:textColor="@color/white"
-            android:textSize="@dimen/_16ssp" />
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_signin"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="@dimen/_25sdp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text2"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:background="@drawable/ellipser"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:layout_marginEnd="@dimen/_45sdp"
+            android:background="@drawable/rectangle2"
             android:gravity="center"
-            android:textStyle="bold"
             android:text="@string/signin"
             android:textColor="@color/white"
-            android:textSize="@dimen/_16ssp" />
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

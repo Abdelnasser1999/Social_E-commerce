@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "691971681872",
+    "project_id": "vaguy-f1591",
+    "storage_bucket": "vaguy-f1591.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691971681872:android:f8f6dc1ac6d831b9f5ab55",
+        "android_client_info": {
+          "package_name": "com.nasser.ma99.social_e_commerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691971681872-k9s5a7r12rbeajobgmuj0h76v2nf92mv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nasser.ma99.social_e_commerce",
+            "certificate_hash": "fe6746cbd0ba9c80656a88dbf7a06993c7e9b34f"
+          }
+        },
+        {
+          "client_id": "691971681872-604n52d4rf12pkb3nfp5rbdh6tg74f27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh1rdZNNqzyz9EYS_E1joINH-iyOe2M-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691971681872-604n52d4rf12pkb3nfp5rbdh6tg74f27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

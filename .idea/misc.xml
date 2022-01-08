@@ -3,22 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_content.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_create_copaign.xml" value="0.22" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_interest.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_mood_description.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_moodboard.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_payment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_prelaoded.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_review.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed Abd/AndroidStudioProjects/Social_E-commerce/app/src/main/res/layout/fragment_set_breif.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/activity_add_compaign.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/activity_influencer_create.xml" value="0.209375" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/activity_login.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/activity_welcome.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_billing.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_change_password.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_content.xml" value="0.5" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_create_account.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_create_copaign.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_financial.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_interest.xml" value="0.2" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_language.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_logo.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_mood_description.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_moodboard.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_payment.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_prelaoded.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_review.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_set_breif.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_settings.xml" value="0.209375" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/fragment_type_sign_up.xml" value="0.209375" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/welcome_slide1.xml" value="0.209375" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/welcome_slide2.xml" value="0.22" />
+        <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/welcome_slide3.xml" value="0.209375" />
         <entry key="..\:/Users/Nasser/AndroidStudioProjects/Social_Ecommerce/app/src/main/res/layout/welcome_slide4.xml" value="0.25" />
       </map>
     </option>

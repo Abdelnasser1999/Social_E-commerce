@@ -1,13 +1,17 @@
 package com.nasser.ma99.social_e_commerce.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -28,9 +32,25 @@ public class WelcomeActivity extends AppCompatActivity {
     private int[] layouts;
     private PrefManager prefManager;
 
+    // scaling
+    private int dpHeight;
+    private int dpWidth;
+    private float dDensity;
+    private int designHeight=812;
+    private int designWidth=409;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN
+        ,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        DisplayMetrics displayMetrics= getResources().getDisplayMetrics();
+
+        dpHeight=displayMetrics.heightPixels;
+        dpWidth=displayMetrics.widthPixels;
+        dDensity=displayMetrics.scaledDensity;
+
 
         // Checking for first time launch - before calling setContentView()
        prefManager = new PrefManager(this);
@@ -45,7 +65,6 @@ public class WelcomeActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_welcome);
-
         viewPager =  findViewById(R.id.view_pager);
         dotsLayout =  findViewById(R.id.layoutDots);
         btnSkip =  findViewById(R.id.btn_skip);
@@ -66,6 +85,8 @@ public class WelcomeActivity extends AppCompatActivity {
         myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
+        ViewGroup.LayoutParams viewPagerParams= viewPager.getLayoutParams();
+        viewPagerParams.height=calcHeight(800);
 
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +96,12 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
 
+    }
+    public int calcHeight(float value){
+        return (int) (dpHeight*(value/designHeight));
+    }
+    public int calcWidth(float value){
+        return (int) (dpWidth*(value/designWidth));
     }
 
     private void addBottomDots(int currentPage) {

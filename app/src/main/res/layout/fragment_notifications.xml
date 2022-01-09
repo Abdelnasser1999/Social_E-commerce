@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ui.notifications.NotificationsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_2sdp">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:src="@drawable/add" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_toEndOf="@id/imageButton2"
+            android:background="@color/white"
+            android:src="@drawable/filter" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:src="@drawable/notification" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <EditText
+        android:fontFamily="@font/salsa"
+        android:layout_margin="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/search"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_search_et"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="@string/search_compaign"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_16ssp"/>
+</LinearLayout>

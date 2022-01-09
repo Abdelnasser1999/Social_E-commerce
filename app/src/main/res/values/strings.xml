@@ -267,6 +267,20 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="set_password">Set Password</string>
+    <string name="title_activity_main_app">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="settings">settings</string>
+    <string name="chat">chat</string>
+    <string name="home">home</string>
+    <string name="influencer">influencer</string>
+    <string name="compaign">compaign</string>
+    <string name="welcome_to_vaguy">Welcome to vaguy</string>
+    <string name="hiuser">Hi user</string>
+    <string name="start_another_conversation">Start another conversation</string>
+    <string name="send_us_a_message">Send us a message</string>
+    <string name="search_compaign">search compaign</string>
 
 </resources>
 

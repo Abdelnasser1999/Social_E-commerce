@@ -7,158 +7,168 @@
     tools:context=".Fragment.CreateCopaignFragment.MoodboardFragment">
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_6sdp"
-            android:orientation="horizontal">
+            android:orientation="vertical" >
 
-            <ImageButton
-                android:id="@+id/bt_back_setBreif"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:background="@color/white"
-                android:src="@drawable/ic_baseline_arrow_back_24"
-                tools:ignore="SpeakableTextPresentCheck" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <com.kofigyan.stateprogressbar.StateProgressBar
-                android:id="@+id/your_state_progress_bar_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_12sdp"
-                app:spb_animateToCurrentProgressState="true"
-                app:spb_checkStateCompleted="true"
-                app:spb_currentStateDescriptionColor="#F06BF2"
-                app:spb_currentStateNumber="two"
-                app:spb_maxStateNumber="five"
-                app:spb_stateBackgroundColor="#7E7593"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
 
-                app:spb_stateDescriptionColor="#7E7593"
-                app:spb_stateForegroundColor="#F06BF2"
-                app:spb_stateLineThickness="2.8dp"
-                app:spb_stateNumberBackgroundColor="#F06BF2"
-                app:spb_stateNumberForegroundColor="#7E7593"
-                app:spb_stateSize="@dimen/_30sdp" />
+                    <ImageButton
+                        android:id="@+id/bt_back_setBreif"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <com.kofigyan.stateprogressbar.StateProgressBar
+                        android:id="@+id/your_state_progress_bar_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        app:spb_animateToCurrentProgressState="true"
+                        app:spb_checkStateCompleted="true"
+                        app:spb_currentStateDescriptionColor="#F06BF2"
+                        app:spb_currentStateNumber="two"
+                        app:spb_maxStateNumber="five"
+                        app:spb_stateBackgroundColor="#7E7593"
+
+                        app:spb_stateDescriptionColor="#7E7593"
+                        app:spb_stateForegroundColor="#F06BF2"
+                        app:spb_stateLineThickness="2.8dp"
+                        app:spb_stateNumberBackgroundColor="#F06BF2"
+                        app:spb_stateNumberForegroundColor="#7E7593"
+                        app:spb_stateSize="@dimen/_30sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3212"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/Moodboard"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+
+                <ImageButton
+                    android:id="@+id/add_header_image"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@null"
+                    android:src="@drawable/ic_baseline_add_circle_outline_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/textView3532212"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/publish"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22ssp" />
+
+                <TextView
+
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/Do"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName432"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/salsa"
+                    android:hint="@string/EenterDO"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/_13ssp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/Dont"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:ems="10"
+                    android:fontFamily="@font/salsa"
+                    android:hint="@string/EnterDont"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/_13ssp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:id="@+id/tv_save_at_moodboard"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@id/text2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/rectangle_save_comp"
+                    android:fontFamily="@font/salsa"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <ImageButton
+
+                    android:id="@+id/bt_next_moodboard_dec"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_forward_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView3212"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Moodboard"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_16ssp" />
-
-        <ImageButton
-            android:layout_marginTop="@dimen/_10sdp"
-            android:id="@+id/add_header_image"
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:background="@null"
-            android:src="@drawable/ic_baseline_add_circle_outline_24"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/textView3532212"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/publish"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_22ssp" />
-
-        <TextView
-
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Do"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_14ssp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName432"
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:ems="10"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:fontFamily="@font/salsa"
-            android:hint="@string/EenterDO"
-            android:inputType="textPersonName"
-            android:textSize="@dimen/_13ssp"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView3"
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:fontFamily="@font/salsa"
-            android:text="@string/Dont"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_14ssp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:ems="10"
-            android:fontFamily="@font/salsa"
-            android:hint="@string/EnterDont"
-            android:inputType="textPersonName"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:textSize="@dimen/_13ssp"
-            tools:ignore="TouchTargetSizeCheck" />
-
-
-        <TextView
-            android:fontFamily="@font/salsa"
-            android:id="@+id/tv_save_at_moodboard"
-            android:layout_width="@dimen/_110sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_below="@id/text2"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:background="@drawable/ellipsesave"
-            android:gravity="center"
-            android:text="@string/save"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"
-             />
-
-        <ImageButton
-
-            android:id="@+id/bt_next_moodboard_dec"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_gravity="bottom|end"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:layout_marginEnd="@dimen/_12sdp"
-            android:background="@color/white"
-            android:src="@drawable/ic_baseline_arrow_forward_24"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-    </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

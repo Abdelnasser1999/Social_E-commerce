@@ -6,241 +6,249 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.CreateCopaignFragment.BillingFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_6sdp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/bt_back_createcom"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:background="@color/white"
-                android:src="@drawable/ic_baseline_arrow_back_24"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <com.kofigyan.stateprogressbar.StateProgressBar
-                android:id="@+id/your_state_progress_bar_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_12sdp"
-                app:spb_animateToCurrentProgressState="true"
-                app:spb_checkStateCompleted="true"
-                app:spb_currentStateDescriptionColor="#F06BF2"
-                app:spb_currentStateNumber="five"
-                app:spb_maxStateNumber="five"
-                app:spb_stateBackgroundColor="#7E7593"
-
-                app:spb_stateDescriptionColor="#7E7593"
-                app:spb_stateForegroundColor="#F06BF2"
-                app:spb_stateLineThickness="2.8dp"
-                app:spb_stateNumberBackgroundColor="#F06BF2"
-                app:spb_stateNumberForegroundColor="#7E7593"
-                app:spb_stateSize="@dimen/_30sdp" />
-
-        </LinearLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_500sdp"
-
-            app:cardBackgroundColor="#EFD6E8"
-            app:cardCornerRadius="@dimen/_35sdp"
-            app:cardUseCompatPadding="true">
-
+            android:orientation="vertical" >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-
-
-
-
-
-
-                <TextView
-                    android:id="@+id/text32442View44335242"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_18sdp"
-                    android:layout_marginTop="@dimen/_65sdp"
-                    android:fontFamily="@font/salsa"
-                    android:text="@string/FinancialPhone"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp" />
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/editText324TextPe423rson324Name2"
-                    android:layout_width="@dimen/_180sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_16sdp"
-                    android:ems="10"
-                    android:fontFamily="@font/salsa"
-                    android:inputType="textPersonName"
-                    android:textColorHint="@color/gray"
-                    android:textSize="@dimen/_12ssp" />
+                    <ImageButton
+                        android:id="@+id/bt_back_createcom"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
-                <TextView
-                    android:id="@+id/textView3532213242"
+                    <com.kofigyan.stateprogressbar.StateProgressBar
+                        android:id="@+id/your_state_progress_bar_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        app:spb_animateToCurrentProgressState="true"
+                        app:spb_checkStateCompleted="true"
+                        app:spb_currentStateDescriptionColor="#F06BF2"
+                        app:spb_currentStateNumber="five"
+                        app:spb_maxStateNumber="five"
+                        app:spb_stateBackgroundColor="#7E7593"
+
+                        app:spb_stateDescriptionColor="#7E7593"
+                        app:spb_stateForegroundColor="#F06BF2"
+                        app:spb_stateLineThickness="2.8dp"
+                        app:spb_stateNumberBackgroundColor="#F06BF2"
+                        app:spb_stateNumberForegroundColor="#7E7593"
+                        app:spb_stateSize="@dimen/_30sdp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_500sdp"
+
+                    app:cardBackgroundColor="#EFD6E8"
+                    app:cardCornerRadius="@dimen/_35sdp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/text32442View44335242"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_65sdp"
+                            android:fontFamily="@font/salsa"
+                            android:text="@string/FinancialPhone"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <EditText
+                            android:id="@+id/editText324TextPe423rson324Name2"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:ems="10"
+                            android:fontFamily="@font/salsa"
+                            android:inputType="textPersonName"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/textView3532213242"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:fontFamily="@font/salsa"
+                            android:text="@string/BillingAddress"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <TextView
+                            android:id="@+id/text32442324View44335242"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:fontFamily="@font/salsa"
+                            android:text="@string/StreetAdressPOBox"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <EditText
+                            android:id="@+id/editText324TextP324e423rson324Name2"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:ems="10"
+                            android:fontFamily="@font/salsa"
+                            android:inputType="textPersonName"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/text32442View44343235242"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:fontFamily="@font/salsa"
+                            android:text="@string/City"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <EditText
+                            android:id="@+id/editText324TextPe423432rson324Name2"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:ems="10"
+                            android:fontFamily="@font/salsa"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/text32442View43244335242"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:fontFamily="@font/salsa"
+                            android:text="@string/Wilaya"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <EditText
+                            android:id="@+id/ediTe34tPe423rson324Name2"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:ems="10"
+                            android:fontFamily="@font/salsa"
+                            android:inputType="phone"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/text32442View4324"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:fontFamily="@font/salsa"
+                            android:text="@string/PostZipcode"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <EditText
+                            android:id="@+id/ediTe34tPe42ame2"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:ems="10"
+                            android:fontFamily="@font/salsa"
+                            android:inputType="phone"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_35sdp"
-                    android:fontFamily="@font/salsa"
-                    android:layout_marginStart="@dimen/_20sdp"
-                    android:text="@string/BillingAddress"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_16ssp" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/text32442324View44335242"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_18sdp"
-                    android:layout_marginTop="@dimen/_25sdp"
-                    android:fontFamily="@font/salsa"
-                    android:text="@string/StreetAdressPOBox"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:id="@+id/tv_submit_at_moodboard"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:background="@drawable/rectangle_save_comp"
+                        android:fontFamily="@font/salsa"
+                        android:gravity="center"
+                        android:text="@string/save"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
 
-                <EditText
-                    android:id="@+id/editText324TextP324e423rson324Name2"
-                    android:layout_width="@dimen/_180sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_16sdp"
-                    android:ems="10"
-                    android:fontFamily="@font/salsa"
-                    android:inputType="textPersonName"
-                    android:textColorHint="@color/gray"
-                    android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:id="@+id/tv_save_at_moodboard"
 
-                <TextView
-                    android:id="@+id/text32442View44343235242"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_18sdp"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:fontFamily="@font/salsa"
-                    android:text="@string/City"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp" />
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:layout_toStartOf="@id/bt_next_Financial"
+                        android:background="@drawable/rectangle_save_comp"
+                        android:fontFamily="@font/salsa"
+                        android:gravity="center"
+                        android:text="@string/Submit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
 
-                <EditText
-                    android:id="@+id/editText324TextPe423432rson324Name2"
-                    android:layout_width="@dimen/_180sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_16sdp"
-                    android:ems="10"
-                    android:fontFamily="@font/salsa"
-                    android:inputType="textEmailAddress"
-                    android:textColorHint="@color/gray"
-                    android:textSize="@dimen/_12ssp" />
+                    <ImageButton
+                        android:id="@+id/bt_next_Financial"
 
-                <TextView
-                    android:id="@+id/text32442View43244335242"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_18sdp"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:fontFamily="@font/salsa"
-                    android:text="@string/Wilaya"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp" />
-
-                <EditText
-                    android:id="@+id/ediTe34tPe423rson324Name2"
-                    android:layout_width="@dimen/_180sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_16sdp"
-                    android:ems="10"
-                    android:fontFamily="@font/salsa"
-                    android:inputType="phone"
-                    android:textColorHint="@color/gray"
-                    android:textSize="@dimen/_12ssp" />
-
-                <TextView
-                    android:id="@+id/text32442View4324"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_18sdp"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:fontFamily="@font/salsa"
-                    android:text="@string/PostZipcode"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp" />
-
-                <EditText
-                    android:id="@+id/ediTe34tPe42ame2"
-                    android:layout_width="@dimen/_180sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_16sdp"
-                    android:ems="10"
-                    android:fontFamily="@font/salsa"
-                    android:inputType="phone"
-                    android:textColorHint="@color/gray"
-                    android:textSize="@dimen/_12ssp" />
-
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
 
 
             </LinearLayout>
+        </LinearLayout>
+    </ScrollView><![CDATA[
 
+    >
 
-        </androidx.cardview.widget.CardView>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_submit_at_moodboard"
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:layout_marginStart="@dimen/_25sdp"
-                android:background="@drawable/ellipsesave"
-                android:fontFamily="@font/salsa"
-                android:gravity="center"
-                android:text="@string/save"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_16ssp" />
-
-            <TextView
-                android:id="@+id/tv_save_at_moodboard"
-
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:layout_marginEnd="@dimen/_25sdp"
-                android:layout_toStartOf="@id/bt_next_Financial"
-                android:background="@drawable/ellipsesave"
-                android:fontFamily="@font/salsa"
-                android:gravity="center"
-                android:text="@string/Submit"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_16ssp" />
-
-            <ImageButton
-                android:id="@+id/bt_next_Financial"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/_12sdp"
-                android:layout_marginBottom="@dimen/_2sdp"
-                android:background="@color/white"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-
-
-    </LinearLayout>>
-
+]]>
 </FrameLayout>

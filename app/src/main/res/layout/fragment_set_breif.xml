@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.CreateCopaignFragment.SetBreifFragment">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -311,7 +321,7 @@
             android:layout_below="@id/text2"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_20sdp"
-            android:background="@drawable/ellipsesave"
+            android:background="@drawable/rectangle_save_comp"
             android:gravity="center"
             android:text="@string/save"
             android:textColor="@color/black"
@@ -331,5 +341,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

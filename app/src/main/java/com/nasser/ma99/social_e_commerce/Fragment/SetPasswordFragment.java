@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.nasser.ma99.social_e_commerce.Activity.AddCompaignActivity;
 import com.nasser.ma99.social_e_commerce.Activity.MainActivity;
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentSetPasswordBinding;
@@ -26,6 +27,7 @@ public class SetPasswordFragment extends Fragment {
 
     FragmentSetPasswordBinding binding;
     String name, email, mobile, phone, password, confirmpassword, typeuser;
+    private PreferenceManager preferenceManger;
 
 
     @Override
@@ -33,6 +35,7 @@ public class SetPasswordFragment extends Fragment {
         binding = FragmentSetPasswordBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
+        preferenceManger = new PreferenceManager(getActivity().getApplicationContext());
 
         name = getArguments().getString(Constants.KEY_NAME);
         email = getArguments().getString(Constants.KEY_EMAIL);
@@ -85,7 +88,10 @@ public class SetPasswordFragment extends Fragment {
                 .add(user)
                 .addOnSuccessListener(documentReference -> {
                     loading(false);
-                    Intent intent = new Intent(getContext(), MainActivity.class);
+                    preferenceManger.putBoolean(Constants.KEY_IS_SIGNED_IN, true);
+                    preferenceManger.putString(Constants.KEY_USER_ID, documentReference.getId());
+                    preferenceManger.putString(Constants.KEY_NAME,name);
+                    Intent intent = new Intent(getContext(), AddCompaignActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 })

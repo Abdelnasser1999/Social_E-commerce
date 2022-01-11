@@ -1,6 +1,7 @@
 package com.nasser.ma99.social_e_commerce.Model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class UserModel implements Serializable {
 

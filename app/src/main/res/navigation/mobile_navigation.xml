@@ -9,7 +9,12 @@
         android:id="@+id/navigation_settings"
         android:name="com.nasser.ma99.social_e_commerce.Activity.ui.Settings.SettingsFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+
+        <action
+            android:id="@+id/action_navigation_settings_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_chat"
@@ -19,17 +24,23 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.notifications.NotificationsFragment"
+        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.home.HomeFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/navigation_influencer"
-        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.notifications.NotificationsFragment"
+        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.Influencer.influencerFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_influencer" />
     <fragment
         android:id="@+id/navigation_compaign"
-        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.notifications.NotificationsFragment"
+        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.Compaign.CompaignFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_compaign" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.nasser.ma99.social_e_commerce.Fragment.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+
 </navigation>

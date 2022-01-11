@@ -20,6 +20,19 @@ public class Constants {
     public static final String KEY_RECEIVER_ID = "receiverId";
     public static final String KEY_MESSAGE = "message";
     public static final String KEY_TIMESTAMP = "timestamp";
+    public static final String KEY_COLLECTION_COMPAIGN= "Compaign";
+    public static final String KEY_IMAGE_COMP = "imagecomp";
+    public static final String KEY_IMAGE_BRAND = "imagebrand";
+    public static final String KEY_BRAND_NAME = "brandname";
+    public static final String KEY_BRAND_DISCRIPE = "branddiscripe";
+    public static final String KEY_CATAGORIS = "catagorie";
+    public static final String KEY_URL_BRAND = "urlbarnd";
+    public static final String KEY_COMP_NAME = "copmname";
+    public static final String KEY_COMP_TYPE = "coptype";
+    public static final String KEY_COMP_DESCRIPTION = "copdescription";
+    public static final String KEY_CALL_TO_ACTION = "calltoaction";
+    public static final String KEY_PRELAODED = "prelaoded";
+
 
 
 }

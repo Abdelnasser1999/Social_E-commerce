@@ -8,26 +8,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nasser.ma99.social_e_commerce.Adapter.PrefManager;
 import com.nasser.ma99.social_e_commerce.R;
+import com.nasser.ma99.social_e_commerce.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {
-    TextView signup,signin;
+    ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         PrefManager prefManager = new PrefManager(getApplicationContext());
-        if(prefManager.isFirstTimeLaunch()){
+        if (prefManager.isFirstTimeLaunch()) {
             prefManager.setFirstTimeLaunch(false);
             startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
             finish();
         }
-
-
-
-
 
 
     }

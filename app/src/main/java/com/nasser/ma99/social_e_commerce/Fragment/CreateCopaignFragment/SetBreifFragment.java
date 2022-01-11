@@ -8,14 +8,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentSetBreifBinding;
+import com.nasser.ma99.social_e_commerce.utilities.Constants;
+
+import java.util.HashMap;
 
 
 public class SetBreifFragment extends Fragment {
     FragmentSetBreifBinding binding;
 
+    Boolean isSave = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -40,8 +46,8 @@ public class SetBreifFragment extends Fragment {
 
 
         binding.btBackCreatecom.setOnClickListener(view1 -> {
-        getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainerView,new CreateCopaignFragment()).commit();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView, new CreateCopaignFragment()).commit();
 
         });
 
@@ -61,14 +67,91 @@ public class SetBreifFragment extends Fragment {
         });
 
         binding.btNextMoodBoard.setOnClickListener(view1 -> {
-            getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragmentContainerView,new MoodboardFragment()).commit();
+            if(isNotEmpty()) {
+                Save();
 
+
+            }
+
+        });
+        binding.tvSaveAtSettheBreif.setOnClickListener(v -> {
+
+            if (isNotEmpty()) {
+                Save();
+            }
         });
 
 
         return view;
 
 
+    }
+
+    private void Save() {
+        loading(true);
+        FirebaseFirestore database = FirebaseFirestore.getInstance();
+        HashMap<String, Object> company = new HashMap<>();
+        company.put(Constants.KEY_COMP_NAME, binding.etCompaignName.getText().toString());
+        company.put(Constants.KEY_COMP_TYPE, binding.etCompaignType.getText().toString());
+        company.put(Constants.KEY_COMP_DESCRIPTION, binding.etCompaignDescription.getText().toString());
+        company.put(Constants.KEY_CALL_TO_ACTION, binding.etCallToAction.getText().toString());
+        company.put(Constants.KEY_PRELAODED, binding.etPreloadedContent.getText().toString());
+
+        database.collection(Constants.KEY_COLLECTION_COMPAIGN)
+                .add(company)
+                .addOnSuccessListener(documentReference -> {
+                    loading(false);
+                    showToast("Save Successfully");
+
+                })
+                .addOnFailureListener(Exception -> {
+                    loading(false);
+
+                    showToast("Save Failed");
+
+                });
+
+    }
+
+    private void loading(Boolean isLoading) {
+
+        if (isLoading) {
+            binding.progressBar.setVisibility(View.VISIBLE);
+
+        } else {
+            binding.progressBar.setVisibility(View.INVISIBLE);
+
+        }
+    }
+
+    private void showToast(String message) {
+
+        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    private Boolean isNotEmpty() {
+
+        if (binding.etCompaignName.getText().toString().isEmpty()) {
+            showToast("Enter Compaign Name");
+            return false;
+        } else if (binding.etCompaignType.getText().toString().isEmpty()) {
+            showToast("Enter Compaign Type ");
+            return false;
+        } else if (binding.etCompaignDescription.getText().toString().isEmpty()) {
+            showToast("Enter Compaign Description");
+            return false;
+        } else if (binding.etCallToAction.getText().toString().isEmpty()) {
+            showToast("Enter Call To Action");
+            return false;
+
+        } else if (binding.etPreloadedContent.getText().toString().isEmpty()) {
+            showToast("Enter Preloaded Content");
+            return false;
+
+        } else {
+
+            return true;
+
+        }
     }
 }

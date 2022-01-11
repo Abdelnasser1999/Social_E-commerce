@@ -19,7 +19,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </RelativeLayout>
+              <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:visibility="invisible"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"/>
 
 
     <LinearLayout
@@ -92,7 +97,7 @@
                 android:textSize="@dimen/_13ssp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/et_Compaign_name"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -160,7 +165,7 @@
                 android:textSize="@dimen/_13ssp" />
 
             <EditText
-                android:id="@+id/editTextTextPerso4nName"
+                android:id="@+id/et_Compaign_description"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -184,7 +189,7 @@
                 android:textSize="@dimen/_13ssp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/et_Call_to_Action"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -288,7 +293,7 @@
                 android:textSize="@dimen/_15ssp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/et_PreloadedContent"
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="@dimen/_35sdp"
                 android:layout_marginStart="@dimen/_55sdp"
@@ -341,6 +346,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 

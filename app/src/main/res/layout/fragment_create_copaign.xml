@@ -20,7 +20,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </RelativeLayout>
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:visibility="invisible"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"/>
+
 
 
     <LinearLayout
@@ -109,6 +115,7 @@
 
                 <ImageView
                     android:id="@+id/imagecopaign"
+                    android:scaleType="fitXY"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_110sdp"
                     android:src="@color/gray" />
@@ -160,7 +167,7 @@
                     android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/et_Brand_name"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_weight="1"
@@ -184,7 +191,7 @@
                     android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName32"
+                    android:id="@+id/et_descripe_brand"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_weight="1"
@@ -208,7 +215,7 @@
                     android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPerso4nName"
+                    android:id="@+id/et_Catagorie"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_weight="1"
@@ -233,7 +240,7 @@
                     android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/et_Url_brand"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_weight="1"
@@ -306,6 +313,7 @@
             android:src="@drawable/ic_baseline_arrow_forward_24"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
 
     </ScrollView>

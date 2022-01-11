@@ -3,6 +3,7 @@ package com.nasser.ma99.social_e_commerce.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,8 +26,7 @@ public class SettingsFragment extends Fragment {
 
         binding.LanguageEdit.setOnClickListener(view1 -> {
 
-            getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragmentContainerView3, new LanguageFragment()).commit();
+        Navigation.findNavController(view1).navigate(R.id.action_navigation_settings_to_languageFragment);
 
         });
 

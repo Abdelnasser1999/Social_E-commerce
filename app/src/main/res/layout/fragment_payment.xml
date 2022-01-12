@@ -94,7 +94,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName2"
+                            android:id="@+id/et_payment_type"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_marginStart="@dimen/_6sdp"
@@ -118,7 +118,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editTextTextPerson324Name2"
+                            android:id="@+id/et_publishdate"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_marginStart="@dimen/_6sdp"
@@ -142,7 +142,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPerson324Name2"
+                            android:id="@+id/et_end_date"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_30sdp"
                             android:layout_marginStart="@dimen/_6sdp"
@@ -178,7 +178,7 @@
                             android:textSize="@dimen/_10ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPe423rson324Name2"
+                            android:id="@+id/et_first_name_manger"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_6sdp"
@@ -200,7 +200,7 @@
                             android:textSize="@dimen/_10ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextP324e423rson324Name2"
+                            android:id="@+id/et_last_name_manger"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_6sdp"
@@ -222,7 +222,7 @@
                             android:textSize="@dimen/_10ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPe423432rson324Name2"
+                            android:id="@+id/et_email_manger"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_6sdp"
@@ -244,7 +244,7 @@
                             android:textSize="@dimen/_10ssp" />
 
                         <EditText
-                            android:id="@+id/ediTe34tPe423rson324Name2"
+                            android:id="@+id/et_mobile_manger"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_6sdp"

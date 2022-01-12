@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,26 +73,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_16sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
                     android:fontFamily="@font/salsa"
                     android:text="@string/Age"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16ssp" />
 
-                <com.google.android.material.slider.RangeSlider
-                    android:id="@+id/RangeSlider"
+                <SeekBar
+                    android:id="@+id/seekbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-25dp"
+                    android:layout_margin="@dimen/_10sdp"
                     android:theme="@style/Theme.Mytheme"
                     android:valueFrom="13"
-                    android:valueTo="100"
+                    android:valueTo="90"
                     app:labelBehavior="withinBounds"
                     app:values="@array/initial_slider_values" />
 
                 <TextView
                     android:id="@+id/tv_age"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_16sdp"
@@ -118,7 +116,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName432"
+                        android:id="@+id/et_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
@@ -126,18 +124,17 @@
                         android:ems="10"
                         android:fontFamily="@font/salsa"
                         android:hint="@string/Enteryourbudget"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:textSize="@dimen/_13ssp"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Spinner
                         android:id="@+id/spinner"
                         android:layout_width="wrap_content"
-
                         android:layout_height="wrap_content"
                         android:layout_marginStart="-140dp"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:layout_toEndOf="@id/editTextTextPersonName432"
+                        android:layout_toEndOf="@id/et_price"
                         android:entries="@array/price" />
                 </RelativeLayout>
 
@@ -160,7 +157,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_type1"
+                        android:id="@+id/tv_generic"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_16sdp"
@@ -173,7 +170,7 @@
                         android:textSize="@dimen/_13ssp" />
 
                     <TextView
-                        android:id="@+id/tv_type2"
+                        android:id="@+id/tv_elite"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10sdp"
@@ -247,7 +244,7 @@
                     android:textSize="@dimen/_13ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTe432"
+                    android:id="@+id/et_target_country"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_16sdp"

@@ -19,7 +19,11 @@
         android:id="@+id/navigation_chat"
         android:name="com.nasser.ma99.social_e_commerce.Activity.ui.Chat.ChatFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_chat" />
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_navigation_chat_to_chatSupportFragment"
+            app:destination="@id/chatSupportFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_home"
@@ -45,5 +49,9 @@
             android:id="@+id/action_languageFragment_to_navigation_settings"
             app:destination="@id/navigation_settings" />
     </fragment>
+    <fragment
+        android:id="@+id/chatSupportFragment"
+        android:name="com.nasser.ma99.social_e_commerce.Activity.ui.Chat.ChatSupportFragment"
+        android:label="ChatSupportFragment" />
 
 </navigation>

@@ -10,10 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="invisible"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,7 +90,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPe423rson324Name2"
+                            android:id="@+id/et_financial_phone"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -116,7 +123,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextP324e423rson324Name2"
+                            android:id="@+id/et_street"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -138,7 +145,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPe423432rson324Name2"
+                            android:id="@+id/et_city"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -160,7 +167,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/ediTe34tPe423rson324Name2"
+                            android:id="@+id/et_wilaya"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -182,7 +189,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/ediTe34tPe42ame2"
+                            android:id="@+id/et_post_zip"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -199,12 +206,13 @@
                 </androidx.cardview.widget.CardView>
 
                 <RelativeLayout
+                    android:layout_marginBottom="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_submit_at_moodboard"
+                        android:id="@+id/save"
                         android:layout_width="@dimen/_90sdp"
                         android:layout_height="@dimen/_35sdp"
                         android:layout_marginStart="@dimen/_25sdp"
@@ -216,7 +224,7 @@
                         android:textSize="@dimen/_16ssp" />
 
                     <TextView
-                        android:id="@+id/tv_save_at_moodboard"
+                        android:id="@+id/tv_submit"
 
                         android:layout_width="@dimen/_90sdp"
                         android:layout_height="@dimen/_35sdp"
@@ -239,13 +247,13 @@
                         android:layout_marginEnd="@dimen/_12sdp"
                         android:layout_marginBottom="@dimen/_2sdp"
                         android:background="@color/white"
-                        android:src="@drawable/ic_baseline_arrow_forward_24"
+
                         tools:ignore="SpeakableTextPresentCheck" />
                 </RelativeLayout>
 
 
             </LinearLayout>
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView><![CDATA[
 
     >

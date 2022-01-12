@@ -94,7 +94,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPe423rson324Name2"
+                            android:id="@+id/et_company_name"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -105,7 +105,6 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <TextView
-                            android:id="@+id/text32442324View44335242"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_18sdp"
@@ -138,7 +137,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/editText324TextPe423432rson324Name2"
+                            android:id="@+id/et_vat"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -160,7 +159,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/ediTe34tPe423rson324Name2"
+                            android:id="@+id/et_cr"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
@@ -182,7 +181,7 @@
                             android:textSize="@dimen/_12ssp" />
 
                         <EditText
-                            android:id="@+id/ediTe34tPe42ame2"
+                            android:id="@+id/rt_financial_email"
                             android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"

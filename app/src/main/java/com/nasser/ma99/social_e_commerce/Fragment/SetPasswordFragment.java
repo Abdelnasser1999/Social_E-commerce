@@ -13,15 +13,18 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.nasser.ma99.social_e_commerce.Activity.AddCompaignActivity;
 import com.nasser.ma99.social_e_commerce.Activity.MainActivity;
+import com.nasser.ma99.social_e_commerce.Activity.MainAppActivity;
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentSetPasswordBinding;
 import com.nasser.ma99.social_e_commerce.utilities.Constants;
 import com.nasser.ma99.social_e_commerce.utilities.PreferenceManager;
 
 import java.util.HashMap;
+import java.util.UUID;
 
 public class SetPasswordFragment extends Fragment {
 
@@ -70,6 +73,10 @@ public class SetPasswordFragment extends Fragment {
 
         return view;
     }
+    public String main() {
+        final String uuid = UUID.randomUUID().toString().replace("-", "");
+        return  uuid;
+    }
 
     private void signUp() {
         loading(true);
@@ -82,6 +89,8 @@ public class SetPasswordFragment extends Fragment {
         user.put(Constants.KEY_MOBILE, mobile);
         user.put(Constants.KEY_TYPE_USER, typeuser);
         user.put(Constants.KEY_IS_VALID, 0);
+        user.put(Constants.KEY_WALLET, 0.0);
+        user.put(Constants.KEY_USER_ID,main());
 
 
         database.collection(Constants.KEY_COLLECTION_USERS)
@@ -90,7 +99,8 @@ public class SetPasswordFragment extends Fragment {
                     loading(false);
                     preferenceManger.putBoolean(Constants.KEY_IS_SIGNED_IN, true);
                     preferenceManger.putString(Constants.KEY_USER_ID, documentReference.getId());
-                    preferenceManger.putString(Constants.KEY_NAME,name);
+                    preferenceManger.putString(Constants.KEY_NAME, name);
+                    preferenceManger.putString(Constants.KEY_EMAIL, email);
                     Intent intent = new Intent(getContext(), AddCompaignActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);

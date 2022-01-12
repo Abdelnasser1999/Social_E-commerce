@@ -12,8 +12,10 @@ public class Constants {
     public static final String KEY_PREFERENCE_NAME = "chatAppPreference";
     public static final String KEY_IS_SIGNED_IN = "isSignedIn";
     public static final String KEY_USER_ID = "userid";
+    public static final String KEY_COMPANY_ID = "companyid";
     public static final String KEY_IMAGE = "image";
     public static final String KEY_FCM_TOKEN = "fcmToken";
+    public static final String KEY_WALLET = "wallet";
     public static final String KEY_USER = "user";
     public static final String KEY_COLLECTION_CHAT = "chat";
     public static final String KEY_SENDER_ID = "senderId";
@@ -32,7 +34,33 @@ public class Constants {
     public static final String KEY_COMP_DESCRIPTION = "copdescription";
     public static final String KEY_CALL_TO_ACTION = "calltoaction";
     public static final String KEY_PRELAODED = "prelaoded";
-
+    public static final String KEY_MOODBOARD = "moodboard";
+    public static final String KEY_DO = "Do";
+    public static final String KEY_DONT = "dont";
+    public static final String KEY_ATTACHMENT_DISCRIPE = "attachmentdiscripe";
+    public static final String KEY_AGE = "age";
+    public static final String KEY_PRICE = "price";
+    public static final String KEY_INFLUENCER_TYPE = "influencertype";
+    public static final String KEY_GENDER = "gender";
+    public static final String KEY_TARGET_CONTRY= "targetcontry";
+    public static final String KEY_INTREST= "intrest";
+    public static final String KEY_PAYMENT_TYPE= "paymenttype";
+    public static final String KEY_PUBLISHDATE= "publishdate";
+    public static final String KEY_ENDDATE= "enddate";
+    public static final String KEY_FIRST_NAME_MANGER= "firstnamemaneger";
+    public static final String KEY_LAST_NAME_MANGER= "lastnamemaneger";
+    public static final String KEY_EMAIL_MANGER= "emailmaneger";
+    public static final String KEY_MOBILE_NUMBER_NAME_MANGER= "mobilemanegernumber";
+    public static final String KEY_COMPANY_NAME= "companyname";
+    public static final String KEY_VAT= "vat";
+    public static final String KEY_CR= "cr";
+    public static final String KEY_FINANCIAL_EMAIL= "financialemail";
+    public static final String KEY_STREET_ADRESS= "streetadress";
+    public static final String KEY_FINANCIAL_PHONE= "financialphone";
+    public static final String KEY_CITY= "city";
+    public static final String KEY_WILAYA= "wilaya";
+    public static final String KEY_POST_ZIP= "zip";
+    public static final String KEY_PRAND_PLATFORMS= "platforms";
 
 
 }

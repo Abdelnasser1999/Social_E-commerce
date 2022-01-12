@@ -10,6 +10,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.view.LayoutInflater;
@@ -20,14 +21,18 @@ import android.widget.Toast;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.nasser.ma99.social_e_commerce.Activity.LoginActivity;
 import com.nasser.ma99.social_e_commerce.Activity.MainActivity;
+import com.nasser.ma99.social_e_commerce.Activity.MainAppActivity;
+import com.nasser.ma99.social_e_commerce.Model.UserModel;
 import com.nasser.ma99.social_e_commerce.R;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentCreateCopaignBinding;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentSetBreifBinding;
 import com.nasser.ma99.social_e_commerce.utilities.Constants;
+import com.nasser.ma99.social_e_commerce.utilities.PreferenceManager;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import static android.app.Activity.RESULT_OK;
@@ -37,9 +42,9 @@ public class CreateCopaignFragment extends Fragment {
 
     private String encodedImage;
     private String encodedImage2;
-
+    private PreferenceManager preferenceManager;
     int imageheader1 = 100;
-    boolean isSave = false;
+
 
     FragmentCreateCopaignBinding binding;
 
@@ -48,11 +53,33 @@ public class CreateCopaignFragment extends Fragment {
 
         binding = FragmentCreateCopaignBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+        preferenceManager = new PreferenceManager(getContext());
 
         binding.btNextSetBreif.setOnClickListener(view1 -> {
-            if(isNotEmpty()) {
-                isSave = true;
-                Save();
+            if (isNotEmpty()) {
+
+                String Brandname = binding.etBrandName.getText().toString();
+                String branddescription = binding.etBrandName.getText().toString();
+                String catagorie = binding.etBrandName.getText().toString();
+                String url = binding.etBrandName.getText().toString();
+                String imagecompany = encodedImage;
+                String imagebrand = encodedImage2;
+
+                Bundle b = new Bundle();
+                preferenceManager.putString(Constants.KEY_BRAND_NAME,Brandname);
+                preferenceManager.putString(Constants.KEY_BRAND_DISCRIPE,branddescription);
+                preferenceManager.putString(Constants.KEY_CATAGORIS,catagorie);
+                preferenceManager.putString(Constants.KEY_URL_BRAND,url);
+                preferenceManager.putString(Constants.KEY_IMAGE_COMP,imagecompany);
+                preferenceManager.putString(Constants.KEY_IMAGE_BRAND,imagebrand);
+
+                Fragment f = new SetBreifFragment();
+                f.setArguments(b);
+
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentContainerView,f).commit();
+
+
             }
 
         });
@@ -60,8 +87,9 @@ public class CreateCopaignFragment extends Fragment {
 
         binding.btBackToLogin.setOnClickListener(view1 -> {
 
-            Intent i = new Intent(getActivity(), LoginActivity.class);
+            Intent i = new Intent(getActivity(), MainAppActivity.class);
             startActivity(i);
+            getActivity().finish();
 
 
         });
@@ -81,9 +109,14 @@ public class CreateCopaignFragment extends Fragment {
         binding.tvSaveAtNewCompaign.setOnClickListener(v -> {
 
             if (isNotEmpty()) {
-                Save();
-
-
+                loading(true);
+                Toast.makeText(getContext(), "Save Complete", Toast.LENGTH_SHORT).show();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        loading(false);
+                    }
+                }, 500);
             }
         });
 
@@ -143,43 +176,6 @@ public class CreateCopaignFragment extends Fragment {
 
     );
 
-    private void Save() {
-        loading(true);
-        FirebaseFirestore database = FirebaseFirestore.getInstance();
-        HashMap<String, Object> company = new HashMap<>();
-        company.put(Constants.KEY_BRAND_NAME, binding.etBrandName.getText().toString());
-        company.put(Constants.KEY_BRAND_DISCRIPE, binding.etDescripeBrand.getText().toString());
-        company.put(Constants.KEY_CATAGORIS, binding.etCatagorie.getText().toString());
-        company.put(Constants.KEY_URL_BRAND, binding.etUrlBrand.getText().toString());
-        company.put(Constants.KEY_IMAGE_BRAND, encodedImage2);
-        company.put(Constants.KEY_IMAGE_COMP, encodedImage);
-
-        database.collection(Constants.KEY_COLLECTION_COMPAIGN)
-                .add(company)
-                .addOnSuccessListener(documentReference -> {
-                    loading(false);
-                    showToast("Save Successfully");
-
-                    if(isSave) {
-                        SetBreifFragment f = new SetBreifFragment();
-                        Bundle b = new Bundle();
-                        b.putString("path",documentReference.getPath());
-                        f.setArguments(b);
-
-
-                        getActivity().getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragmentContainerView, f).commit();
-                    }
-
-                })
-                .addOnFailureListener(Exception -> {
-                    loading(false);
-                    showToast(Exception.getMessage());
-                    showToast("Save Failed");
-
-                });
-
-    }
 
     private void loading(Boolean isLoading) {
 

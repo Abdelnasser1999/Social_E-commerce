@@ -67,8 +67,8 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_28ssp" />
 
-                <ImageButton
-                    android:id="@+id/add_header_image"
+                <ImageView
+                    android:id="@+id/add_moodboarddes"
                     android:layout_width="@dimen/_60sdp"
                     android:layout_height="@dimen/_60sdp"
                     android:layout_gravity="center"
@@ -91,7 +91,7 @@
 
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName432"
+                    android:id="@+id/et_Attachement_Description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_16sdp"

@@ -3,6 +3,8 @@ package com.nasser.ma99.social_e_commerce.utilities;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import java.util.Set;
+
 public class PreferenceManager {
 
     private SharedPreferences sharedPreferences;
@@ -34,6 +36,8 @@ public class PreferenceManager {
         editor.apply();
 
     }
+
+
 
     public String getString(String  key){
         return  sharedPreferences.getString(key,null);

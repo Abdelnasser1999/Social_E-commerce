@@ -68,8 +68,8 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16ssp" />
 
-                <ImageButton
-                    android:id="@+id/add_header_image"
+                <ImageView
+                    android:id="@+id/add_moodboard"
                     android:layout_width="@dimen/_60sdp"
                     android:layout_height="@dimen/_60sdp"
                     android:layout_marginStart="@dimen/_16sdp"
@@ -103,7 +103,7 @@
                     android:textSize="@dimen/_14ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName432"
+                    android:id="@+id/et_do"
                     android:layout_width="@dimen/_180sdp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_30sdp"
@@ -128,8 +128,7 @@
                     android:textSize="@dimen/_14ssp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
-                    android:layout_width="@dimen/_180sdp"
+                    android:id="@+id/et_dont"                    android:layout_width="@dimen/_180sdp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_30sdp"
                     android:layout_marginTop="@dimen/_4sdp"
@@ -142,7 +141,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_save_at_moodboard"
+                    android:id="@+id/et_do4234nt"
                     android:layout_width="@dimen/_110sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_below="@id/text2"

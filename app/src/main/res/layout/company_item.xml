@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/image_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@color/gray" />
+
+    <TextView
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/shape_status"
+        android:gravity="center"
+        android:text="Draft"
+        android:fontFamily="@font/salsa"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_company" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/Logo_company"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@id/image_company"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="-60dp"
+        android:scaleType="fitXY"
+        app:riv_oval="true" />
+
+</RelativeLayout>

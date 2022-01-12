@@ -5,14 +5,15 @@ import java.util.ArrayList;
 
 public class UserModel implements Serializable {
 
-    public  String name ,mobile,phone,email,token,id,typeUser;
+    public String name, mobile, phone, email, token, id, typeUser;
+
     public int isValid;
+    public double wallet;
 
     public UserModel() {
     }
 
-    public UserModel(String name, String mobile, String phone, String email,
-                     String token, String id, String typeUser, int isValid) {
+    public UserModel(String name, String mobile, String phone, String email, String token, String id, String typeUser, int isValid, double wallet) {
         this.name = name;
         this.mobile = mobile;
         this.phone = phone;
@@ -21,6 +22,7 @@ public class UserModel implements Serializable {
         this.id = id;
         this.typeUser = typeUser;
         this.isValid = isValid;
+        this.wallet = wallet;
     }
 
     public String getName() {
@@ -87,17 +89,11 @@ public class UserModel implements Serializable {
         this.isValid = isValid;
     }
 
-    @Override
-    public String toString() {
-        return "UserModel{" +
-                "name='" + name + '\'' +
-                ", mobile='" + mobile + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", token='" + token + '\'' +
-                ", id='" + id + '\'' +
-                ", typeUser='" + typeUser + '\'' +
-                ", isValid=" + isValid +
-                '}';
+    public double getWallet() {
+        return wallet;
+    }
+
+    public void setWallet(double wallet) {
+        this.wallet = wallet;
     }
 }

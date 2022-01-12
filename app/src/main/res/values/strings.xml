@@ -281,6 +281,11 @@
     <string name="start_another_conversation">Start another conversation</string>
     <string name="send_us_a_message">Send us a message</string>
     <string name="search_compaign">search compaign</string>
+    <string name="forget_password"><u>forget password ?</u></string>
+    <string name="log_in">Log in</string>
+    <string name="create_new_account">create new account</string>
+    <string name="add_compaign">Add compaign</string>
+    <string name="apply_now">Apply Now</string>
 
 </resources>
 

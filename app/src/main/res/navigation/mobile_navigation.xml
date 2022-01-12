@@ -3,14 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_settings">
+    app:startDestination="@id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_settings"
         android:name="com.nasser.ma99.social_e_commerce.Activity.ui.Settings.SettingsFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_settings" >
-
         <action
             android:id="@+id/action_navigation_settings_to_languageFragment"
             app:destination="@id/languageFragment" />
@@ -41,6 +40,10 @@
         android:id="@+id/languageFragment"
         android:name="com.nasser.ma99.social_e_commerce.Fragment.LanguageFragment"
         android:label="fragment_language"
-        tools:layout="@layout/fragment_language" />
+        tools:layout="@layout/fragment_language" >
+        <action
+            android:id="@+id/action_languageFragment_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
+    </fragment>
 
 </navigation>

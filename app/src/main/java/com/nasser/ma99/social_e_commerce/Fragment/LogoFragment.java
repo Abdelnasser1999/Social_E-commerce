@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nasser.ma99.social_e_commerce.Activity.AddCompaignActivity;
+import com.nasser.ma99.social_e_commerce.Activity.MainAppActivity;
 import com.nasser.ma99.social_e_commerce.R;
+import com.nasser.ma99.social_e_commerce.databinding.ActivityMainAppBinding;
 import com.nasser.ma99.social_e_commerce.databinding.FragmentLogoBinding;
 import com.nasser.ma99.social_e_commerce.utilities.Constants;
 import com.nasser.ma99.social_e_commerce.utilities.PreferenceManager;
@@ -29,24 +31,22 @@ public class LogoFragment extends Fragment {
         preferenceManager = new PreferenceManager(getActivity().getApplicationContext());
 
         if (preferenceManager.getBoolean(Constants.KEY_IS_SIGNED_IN)) {
-
-            Intent intent = new Intent(getActivity().getApplicationContext(), AddCompaignActivity.class);
+            Intent intent = new Intent(getActivity().getApplicationContext(), MainAppActivity.class);
             startActivity(intent);
             getActivity().finish();
         }
 
-        binding.tvSignup.setOnClickListener(view1 ->
-                {
+
+        binding.tvSignup.setOnClickListener(view1 -> {
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new TypeSignUpFragment()).commit();
-
                 }
-
         );
 
 
         binding.tvSignin.setOnClickListener(v -> {
 
-
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView2,new SigninFragment()).commit();
         });
 
 

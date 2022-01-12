@@ -34,7 +34,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/firstWelcomeImage"
-            android:layout_marginTop="@dimen/_170sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:fontFamily="@font/salsa"
             android:gravity="center"
@@ -42,42 +41,77 @@
             android:textColor="#B74797"
             android:textSize="@dimen/_24ssp" />
 
-
-        <TextView
-            android:id="@+id/tv_im_influencer"
+        <LinearLayout
+            android:id="@+id/influe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/firsttext"
-            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_below="@id/brand"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_45sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:background="@drawable/rectangle1"
-            android:fontFamily="@font/salsa"
+            android:background="@drawable/influerec"
             android:gravity="center"
+            android:orientation="vertical"
             android:paddingStart="@dimen/_10sdp"
-            android:paddingEnd="@dimen/_10sdp"
-            android:text="@string/iminfluencer"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
-            android:textStyle="bold" />
+            android:paddingEnd="@dimen/_10sdp">
 
-        <TextView
-            android:id="@+id/tv_im_brand"
+            <TextView
+                android:id="@+id/tv_im_influencer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
+                android:gravity="top|center"
+
+                android:text="@string/iminfluencer"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/salsa"
+                android:text="@string/apply_now"
+                android:textColor="#7F2366"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/firsttext"
-            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_45sdp"
-            android:layout_marginEnd="@dimen/_30sdp"
-            android:background="@drawable/rectangle2"
-            android:fontFamily="@font/salsa"
+            android:background="@drawable/rectanglebrand"
             android:gravity="center"
+            android:orientation="vertical"
             android:paddingStart="@dimen/_25sdp"
-            android:paddingEnd="@dimen/_25sdp"
-            android:text="@string/imbrand"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
-            android:textStyle="bold" />
+            android:paddingEnd="@dimen/_25sdp">
+
+            <TextView
+
+                android:id="@+id/tv_im_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/salsa"
+                android:gravity="top|center"
+
+                android:text="@string/imbrand"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/salsa"
+                android:text="Add compaign"
+                android:textColor="#7F2366"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </RelativeLayout>
 

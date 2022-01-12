@@ -72,7 +72,7 @@ public class HomeFragment extends Fragment {
 
         ArrayList<campaignModel> DATA = new ArrayList<>();
         //db.collection("users").limit(2).orderBy("name", Query.Direction.DESCENDING).get()
-        database.collection(Constants.KEY_COLLECTION_COMPAIGN).get()
+        database.collection(Constants.KEY_COLLECTION_COMPAIGN).whereEqualTo(Constants.KEY_USER,preferenceManager.getString(Constants.KEY_USER_ID)).get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

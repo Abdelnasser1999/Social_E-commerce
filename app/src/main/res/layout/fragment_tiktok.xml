@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SocialMediaConnect.InstagramFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bt_back_to_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/salsa"
+            android:text="@string/connect_tik_tok"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/black" />
+
+        <ImageButton
+            android:id="@+id/botton_insat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:background="@color/white"
+            android:src="@drawable/tiktokbig"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botton_insat"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:ems="10"
+            android:fontFamily="@font/salsa"
+            android:hint="@string/enter_your_tik_tok_username"
+            android:inputType="textUri"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/et_do4234nt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:background="@drawable/recconnect"
+            android:fontFamily="@font/salsa"
+            android:gravity="center"
+            android:text="@string/connect"
+            android:layout_centerHorizontal="true"
+            android:textColor="#7F2366"
+            android:textSize="@dimen/_18ssp" />
+    </RelativeLayout>
+
+</FrameLayout>

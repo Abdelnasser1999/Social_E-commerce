@@ -1,4 +1,4 @@
-package com.nasser.ma99.social_e_commerce.Fragment;
+package com.nasser.ma99.social_e_commerce.Fragment.SocialMediaConnect;
 
 import android.os.Bundle;
 
@@ -9,20 +9,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nasser.ma99.social_e_commerce.R;
-import com.nasser.ma99.social_e_commerce.databinding.FragmentChangePasswordBinding;
+import com.nasser.ma99.social_e_commerce.databinding.FragmentFacebookBinding;
 
 
-public class ChangePasswordFragment extends Fragment {
+public class FacebookFragment extends Fragment {
 
-FragmentChangePasswordBinding binding ;
+
+    FragmentFacebookBinding binding;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentChangePasswordBinding.inflate(inflater, container, false);
+        binding = FragmentFacebookBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
-
-
-
-
 
 
         return view;

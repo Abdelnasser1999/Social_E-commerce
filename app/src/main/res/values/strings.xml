@@ -288,6 +288,32 @@
     <string name="apply_now">Apply Now</string>
     <string name="type_a_message">type a message</string>
     <string name="start_your_first_campaign">Start your first campaign</string>
+    <string name="wallet_history">Wallet History</string>
+    <string name="balance">Balance</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="all_transaction_details">All transaction details</string>
+    <string name="current_password">current Password</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="new_password">New Password</string>
+
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="connect_your_account">Connect Your Accounts</string>
+    <string name="connect">Connect</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="tik_tok">Tik tok</string>
+    <string name="youtube">Youtube</string>
+    <string name="snapshat">Snapshat</string>
+    <string name="sKIP">Skip</string>
+    <string name="connect_instagram">Connect Instagram</string>
+    <string name="enter_your_instagram_username">Enter Your instagram Username</string>
+    <string name="connect_facebook">Connect Facebook</string>
+    <string name="enter_your_facebook_username">Enter Your Facebook Username</string>
+    <string name="connect_youtube">Connect Youtube</string>
+    <string name="enter_your_youtube_username">Enter Your Youtube Username</string>
+    <string name="connect_tik_tok">Connect Tik Tok</string>
+    <string name="enter_your_tik_tok_username">Enter Your Tik Tok Username</string>
 
 </resources>
 

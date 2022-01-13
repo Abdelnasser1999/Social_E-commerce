@@ -60,7 +60,6 @@
             android:layout_width="match_parent"
             android:id="@+id/inputPasswordlayout"
             android:layout_below="@id/inputEmaillayout"
-
             app:passwordToggleEnabled="true"
             android:layout_height="@dimen/_55sdp">
         <EditText

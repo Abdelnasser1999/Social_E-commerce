@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LanguageFragment">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/title_settings_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_back_to_settings"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_settings_language"
+            android:layout_marginBottom="@dimen/_50sdp"
+            app:cardBackgroundColor="#EFD6E8"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/current_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputPasswordlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inputEmaillayout"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/inputPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#EFD6E8"
+                        android:ems="10"
+                        android:fontFamily="@font/salsa"
+                        android:hint="@string/enter_current_password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/basic" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/new_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputPasswordlayout122"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/inputPassword2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#EFD6E8"
+                        android:ems="10"
+                        android:fontFamily="@font/salsa"
+                        android:hint="@string/enter_new_password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/basic" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/textV23iew3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:fontFamily="@font/salsa"
+                    android:text="@string/confirm_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputPasswordlayout22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/inputPassword1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#EFD6E8"
+                        android:ems="10"
+                        android:fontFamily="@font/salsa"
+                        android:hint="@string/confirm_new_password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/basic" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/et_do4234nt"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:background="@drawable/rectangle_save_comp"
+                android:fontFamily="@font/salsa"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>
